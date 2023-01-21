@@ -183,12 +183,25 @@ img {
 	color: #FFF;
 	width: 36px;
 	height: 36px;
-	background-color: #F26464;
+	background-color: #000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-size: 16px;
+	font-size: 25px;
+}
+.ds-social li .link {
+	border-radius: 100%;
+	color: #FFF;
+	width: 36px;
+	height: 36px;
+	background-color: rgb(107, 148, 214);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 25px;
+
 }
 
 .ds-social li a:hover {
