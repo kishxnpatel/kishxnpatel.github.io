@@ -291,6 +291,7 @@ small {
 	line-height: 30px;
 	font-weight: 300;
 	margin-bottom: 30px;
+	justify-content: center;
 }
 
 .ds-button {
