@@ -140,7 +140,7 @@ img {
 	text-transform: uppercase;
 	font-size: 18px;
 	letter-spacing: 3px;
-	color: white;
+	color: #000;
 	display: flex;
 	align-items: center;
 	text-decoration: bold;
@@ -310,6 +310,7 @@ small {
 	justify-content: center;
 }
 
+
 .ds-button {
 	display: inline-block;
 	text-transform: uppercase;
@@ -371,7 +372,9 @@ small {
 }
 
 .ds-experience-list section {
-	padding-right: 70px;
+	padding: 20px;
+	border:2px rgb(164, 164, 164) solid;
+	border-radius: 10px;
 }
 
 .ds-experience-list {
@@ -379,10 +382,11 @@ small {
 }
 
 .ds-officename {
-	font-size: 18px;
-	font-weight: 400;
+	font-size: 15px;
+	font-weight: 500;
 	margin-bottom: 5px;
 	color: #F26464;
+	text-decoration: uppercase;
 }
 
 .ds-experience-list span {
@@ -398,8 +402,8 @@ span.ds-year {
 
 span.ds-department {
 	color: #373737;
-	font-weight: 500;
-	font-size: 26px;
+	font-weight: 700;
+	font-size: 25px;
 	padding-bottom: 10px;
 }
 
@@ -596,7 +600,7 @@ span.ds-department {
 	}
 
 	.ds-banner,
-	.ds-about-section,
+	
 	.ds-skills-section,
 	.ds-experience-section,
 	.ds-work-section,
@@ -648,10 +652,6 @@ span.ds-department {
 		padding-bottom: 80px;
 	}
 	
-.dimg {
-	height:240px;
-	margin-top: 10px;
-}
 
 	.ds-about-section p,
 	.ds-work-content-sec p,
