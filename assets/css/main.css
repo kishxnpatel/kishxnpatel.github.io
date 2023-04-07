@@ -229,10 +229,7 @@ img {
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 26);
 	border-radius: 10px;
 	border: 10px solid rgba(114, 114, 114, 0.978);
-
-
 }
-
 
 .ds-banner section {
 	padding-left: 70px;
@@ -244,9 +241,7 @@ small {
 }
 
 .ds-banner section h1 span {
-
 	display: block;
-
 	letter-spacing: 1px;
 	font-weight: 500;
 	font-size: 18px;
@@ -307,7 +302,6 @@ small {
 
 .ds-about-section section {
 	border-radius: 5px;
-
 	background-color: #ffffff67;
 	padding: 17px;
 	box-shadow: 0px 0px 7px rgba(0, 0, 0, 26);
@@ -328,7 +322,6 @@ small {
 .ds-about-section p {
 	color: #373737;
 	font-size: 19px;
-	line-height: 25px;
 	font-weight: 300;
 	margin-bottom: 30px;
 	justify-content: center;
