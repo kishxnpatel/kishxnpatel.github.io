@@ -1,23 +1,28 @@
-
 html {
-	font-family: 'Inter', sans-serif;
-	
+	scroll-behavior: smooth;
+
 }
 
 body {
-	font-family: 'Inter', sans-serif;
+	font-family: "Lucida Console", "Courier New", monospace;
 	overflow-x: hidden;
 	font-weight: 400;
 	font-style: normal;
 	color: #373737;
-	font-size: 14px
+	font-size: 14px;
+	background-color: #e5e5f7;
+	background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#c6c8ff55, #c6c8ff);
 }
 
 .prevent-select {
-	-webkit-user-select: none; /* Safari */
-	-ms-user-select: none; /* IE 10 and IE 11 */
-	user-select: none; /* Standard syntax */
-  }
+	-webkit-user-select: none;
+	/* Safari */
+	-ms-user-select: none;
+	/* IE 10 and IE 11 */
+	user-select: none;
+	/* Standard syntax */
+}
+
 a,
 a:hover,
 a:focus,
@@ -74,9 +79,6 @@ ul {
 	margin: 0;
 }
 
-#font-face {
-	font-family: 'Inter', sans-serif;
-}
 
 input:-webkit-autofill,
 textarea:-webkit-autofill,
@@ -93,7 +95,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Inter', sans-serif;
+	font-family: "Lucida Console", "Courier New", monospace;
 }
 
 figure {
@@ -117,17 +119,19 @@ img {
 	width: 100%;
 	height: 70px;
 	z-index: 5;
-	background-color: #FFF;
-	padding: 30px 0;
+	padding: 30px;
 	transition-delay: 0s;
 	transition-duration: 0.3s;
 	transition-property: all;
 	transition-timing-function: ease;
 }
 
+
 .ds-header.ds-fixed-header {
-	padding: 20px 0;
-	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+	padding: 20px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
 }
 
 .ds-header-inner {
@@ -191,6 +195,7 @@ img {
 	text-align: center;
 	font-size: 25px;
 }
+
 .ds-social li .link {
 	border-radius: 100%;
 	color: #FFF;
@@ -221,22 +226,27 @@ img {
 }
 
 .my {
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 16);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 26);
 	border-radius: 10px;
+	border: 10px solid rgba(114, 114, 114, 0.978);
+
+
 }
 
 
 .ds-banner section {
 	padding-left: 70px;
 	padding-right: 100px;
-	
 }
+
 small {
-	font-size:25px;
+	font-size: 25px;
 }
+
 .ds-banner section h1 span {
+
 	display: block;
-	text-transform: uppercase;
+
 	letter-spacing: 1px;
 	font-weight: 500;
 	font-size: 18px;
@@ -248,6 +258,7 @@ small {
 	font-size: 33px;
 	line-height: 50px;
 	color: #000;
+
 }
 
 .ds-numbervalulist {
@@ -286,12 +297,20 @@ small {
 
 
 .ds-section-img {
-	padding-top:50px;
+	padding-top: 50px;
 }
 
 .ds-about-section {
 	padding-top: 60px;
 	padding-bottom: 120px;
+}
+
+.ds-about-section section {
+	border-radius: 5px;
+
+	background-color: #ffffff67;
+	padding: 17px;
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 26);
 }
 
 .ds-heading {
@@ -301,7 +320,7 @@ small {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 18px;
-	border-bottom: 3px solid #F26464;
+	border-bottom: 3px solid #000000;
 	padding-bottom: 7px;
 	margin-bottom: 25px;
 }
@@ -323,15 +342,18 @@ small {
 	line-height: 13px;
 	font-weight: 600;
 	letter-spacing: 3px;
-	color: #F26464;
+	color: white;
+	background-color: #74709a;
 	padding: 17px 30px;
-	border: 2px solid #F26464;
+	border: 2px solid #74709a;
 	border-radius: 60px;
+
 }
 
 .ds-button:hover {
-	background-color: #F26464;
+	background-color: #707ba5;
 	color: #FFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 26);
 }
 
 .ds-arrow-button i {
@@ -361,12 +383,13 @@ small {
 	color: #373737;
 	font-size: 16px;
 	padding: 10px 20px;
-	background-color: #FFF;
-	border: 3px solid #D7D7D7;
+	background-color: #ffffff67;
+	border: 3px solid #9a9a9a;
 	border-radius: 27px;
 	margin-right: 15px;
 	margin-bottom: 15px;
 	font-weight: 500;
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 26);
 }
 
 /*-----------------------------------------------------------------
@@ -374,12 +397,15 @@ small {
 ----------------------------------------------------------------*/
 .ds-experience-section {
 	padding-bottom: 120px;
+
 }
 
 .ds-experience-list section {
 	padding: 20px;
-	border:2px rgb(164, 164, 164) solid;
+	border: 2px rgb(164, 164, 164) solid;
 	border-radius: 10px;
+	background-color: #ffffff67;
+	box-shadow: 0px 0px 9px rgba(0, 0, 0, 26);
 }
 
 .ds-experience-list {
@@ -450,6 +476,7 @@ span.ds-department {
 ----------------------------------------------------------------*/
 .ds-work-section {
 	padding-bottom: 80px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 26);
 }
 
 .ds-work-list {
@@ -547,12 +574,11 @@ span.ds-department {
   7. >>> Footer Style
 ----------------------------------------------------------------*/
 .ds-footer {
-	background-color: #000;
-	padding: 120px 0;
-}
 
-.ds-footer section {
-	padding-bottom: 97px;
+	padding: 40px;
+	background-color: #67656567;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 26);
+
 }
 
 .ds-footer section span {
@@ -565,9 +591,11 @@ span.ds-department {
 	padding-bottom: 20px;
 }
 
-.ds-footer section h4 {
+.ds-footer section h3 {
 	color: #FFF;
-	font-size: 48px;
+	font-size: 42px;
+	-webkit-text-stroke-color: #000;
+	-webkit-text-stroke-width: 1px;
 	font-weight: 700;
 }
 
@@ -589,7 +617,7 @@ span.ds-department {
 }
 
 .ds-copyright a:hover {
-	color: #F26464;
+	color: #6664f2;
 }
 
 
@@ -656,7 +684,7 @@ span.ds-department {
 	.ds-about-section {
 		padding-bottom: 80px;
 	}
-	
+
 
 	.ds-about-section p,
 	.ds-work-content-sec p,
