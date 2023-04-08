@@ -215,12 +215,6 @@ img {
 /*-----------------------------------------------------------------
   2. >>> Banner Style
 ----------------------------------------------------------------*/
-.thk {
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 26);
-	border-radius: 10px;
-	border: 10px solid rgba(114, 114, 114, 0.978);
-	height: 200px;
-}
 
 .ds-banner {
 	padding-top: 20px;
@@ -671,15 +665,14 @@ span.ds-department {
 		font-size: 0;
 	}
 
-
-
 	.ds-banner section {
 		padding-left: 0;
 		padding-right: 0;
 	}
 
 	.ds-banner section h1 span {
-		padding-bottom: 0;
+		padding-top: 20px;
+		padding-bottom: 8px;
 	}
 
 	.ds-banner section h1,
