@@ -6,10 +6,9 @@ html {
 body {
 	font-family: "Lucida Console", "Courier New", monospace;
 	overflow-x: hidden;
-	font-weight: 400;
 	font-style: normal;
+	font-display: optional;
 	color: #373737;
-	font-size: 14px;
 	background-color: #e5e5f7;
 	background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#c6c8ff55, #c6c8ff);
 }
@@ -88,7 +87,7 @@ select:-webkit-autofill {
 	color: #000;
 }
 
-/* 1.2 Typography */
+/* Typography */
 h1,
 h2,
 h3,
@@ -98,9 +97,7 @@ h6 {
 	font-family: "Lucida Console", "Courier New", monospace;
 }
 
-figure {
-	margin: 0
-}
+
 
 svg,
 img {
@@ -218,21 +215,27 @@ img {
 /*-----------------------------------------------------------------
   2. >>> Banner Style
 ----------------------------------------------------------------*/
-
-
+.thk {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 26);
+	border-radius: 10px;
+	border: 10px solid rgba(114, 114, 114, 0.978);
+	height: 200px;
+}
 
 .ds-banner {
 	padding-top: 20px;
 }
 
 .my {
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 26);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 20);
 	border-radius: 10px;
 	border: 10px solid rgba(114, 114, 114, 0.978);
+	width: auto;
 }
 
+
 .ds-banner section {
-	padding-left: 70px;
+	padding-left: 100px;
 	padding-right: 100px;
 }
 
@@ -290,6 +293,20 @@ small {
   3. >>> About Style
 ----------------------------------------------------------------*/
 
+figure {
+	border: 1px #cccccc solid;
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 20);
+	border-radius: 10px;
+	border: 10px solid rgba(114, 114, 114, 0.978);
+	height: auto;
+}
+
+figcaption {
+	text-align: center;
+	color: #fff;
+	font-style: italic;
+	background-color: #000;
+}
 
 .ds-section-img {
 	padding-top: 50px;
@@ -357,6 +374,7 @@ small {
 /*-----------------------------------------------------------------
   4. >>> Skills Style
 ----------------------------------------------------------------*/
+
 .ds-skills-section {
 	padding-bottom: 105px;
 }
@@ -375,7 +393,7 @@ small {
 	display: inline-block;
 	color: #000;
 	font-size: 16px;
-	padding: 13px;
+	padding: 10px;
 	background-color: #ffffff67;
 	border: 3px solid #9a9a9a;
 	border-radius: 27px;
@@ -388,6 +406,8 @@ small {
 /*-----------------------------------------------------------------
   5. >>> Experience Style
 ----------------------------------------------------------------*/
+
+
 .ds-experience-section {
 	padding-bottom: 120px;
 
@@ -477,6 +497,7 @@ span.ds-department {
 /*-----------------------------------------------------------------
   6. >>> Work Style
 ----------------------------------------------------------------*/
+
 .ds-work-section {
 	padding-bottom: 80px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 26);
@@ -576,6 +597,7 @@ span.ds-department {
 /*-----------------------------------------------------------------
   7. >>> Footer Style
 ----------------------------------------------------------------*/
+
 .ds-footer {
 
 	padding: 40px;
@@ -649,9 +671,7 @@ span.ds-department {
 		font-size: 0;
 	}
 
-	.ds-banner figure {
-		padding: 30px 0;
-	}
+
 
 	.ds-banner section {
 		padding-left: 0;
