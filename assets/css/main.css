@@ -9,8 +9,8 @@ body {
 	font-style: normal;
 	font-display: optional;
 	color: #373737;
-	background-color: #e5e5f7;
-	background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#c6c8ff55, #c6c8ff);
+	background-color: #dcdef1;
+	background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#a7a7a755, #d1d1d1);
 }
 
 .prevent-select {
@@ -207,6 +207,20 @@ img {
 
 }
 
+.ds-social li .link1 {
+	border-radius: 100%;
+	color: #FFF;
+	width: 36px;
+	height: 36px;
+	background-color: rgb(237, 104, 104);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 25px;
+
+}
+
 .ds-social li a:hover {
 	background-color: #000;
 	color: #FFF;
@@ -223,7 +237,7 @@ img {
 .my {
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 20);
 	border-radius: 10px;
-	border: 10px solid rgba(114, 114, 114, 0.978);
+	border: 10px solid rgba(99, 99, 99, 0.978);
 	width: auto;
 
 }
@@ -247,10 +261,11 @@ small {
 }
 
 .ds-banner section h1 {
-	font-weight: 600;
+	font-weight: 800;
 	font-size: 33px;
 	line-height: 50px;
 	color: #000;
+
 
 }
 
@@ -321,9 +336,9 @@ figcaption {
 }
 
 .ds-about-section section {
-	border-radius: 5px;
-	background-color: #ffffff67;
-	padding: 17px;
+	border-radius: 15px;
+	background-color: #ffffff87;
+	padding: 15px;
 	box-shadow: 0px 0px 7px rgba(0, 0, 0, 26);
 }
 
@@ -396,8 +411,8 @@ figcaption {
 	color: #000;
 	font-size: 16px;
 	padding: 10px;
-	background-color: #ffffff67;
-	border: 3px solid #9a9a9a;
+	background-color: #ffffff87;
+	border: 3px solid #7e7e7e;
 	border-radius: 27px;
 	margin-right: 12px;
 	margin-bottom: 12px;
@@ -429,7 +444,7 @@ figcaption {
 	padding: 20px;
 	border: 2px rgb(164, 164, 164) solid;
 	border-radius: 10px;
-	background-color: #ffffff67;
+	background-color: #ffffff87;
 	box-shadow: 0px 0px 9px rgba(0, 0, 0, 26);
 }
 
@@ -603,7 +618,7 @@ span.ds-department {
 .ds-footer {
 
 	padding: 40px;
-	background-color: #67656567;
+	background-color: #bcbddd87;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 26);
 
 }
