@@ -8,9 +8,8 @@ body {
 	overflow-x: hidden;
 	font-style: normal;
 	font-display: optional;
-	color: #373737;
-	background-color: #dcdef1;
-	background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#a7a7a755, #d1d1d1);
+	background:
+		radial-gradient(circle at 50% 77%, rgb(105, 127, 252), rgba(0, 255, 0, 0));
 }
 
 .prevent-select {
@@ -98,7 +97,6 @@ h6 {
 }
 
 
-
 svg,
 img {
 	max-width: 100%;
@@ -126,9 +124,8 @@ img {
 
 .ds-header.ds-fixed-header {
 	padding: 20px;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-	backdrop-filter: blur(8px);
-	-webkit-backdrop-filter: blur(8px);
+	box-shadow: 0px 0px 20px #373737;
+	background-color: rgba(141, 158, 255, 0.638);
 }
 
 .ds-header-inner {
@@ -191,6 +188,7 @@ img {
 	align-items: center;
 	text-align: center;
 	font-size: 25px;
+	border: 1px solid #fff;
 }
 
 .ds-social li .link {
@@ -204,6 +202,7 @@ img {
 	align-items: center;
 	text-align: center;
 	font-size: 25px;
+	border: 1px solid black;
 
 }
 
@@ -218,6 +217,7 @@ img {
 	align-items: center;
 	text-align: center;
 	font-size: 25px;
+	border: 1px solid black;
 
 }
 
@@ -235,13 +235,12 @@ img {
 }
 
 .my {
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 20);
-	border-radius: 10px;
-	border: 10px solid rgba(99, 99, 99, 0.978);
+	box-shadow: 0px 0px 10px #373737;
+	border-radius: 15px;
+	border: 2px solid #343434;
 	width: auto;
 
 }
-
 
 .ds-banner section {
 	padding-left: 100px;
@@ -304,9 +303,9 @@ small {
 ----------------------------------------------------------------*/
 
 .gif {
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 20);
-	border-radius: 10px;
-	border: 10px solid rgba(114, 114, 114, 0.978);
+	box-shadow: 0px 0px 10px #373737;
+	border-radius: 15px;
+	border: 2px solid #343434;
 	width: auto;
 	margin-top: 20px;
 }
@@ -337,20 +336,21 @@ figcaption {
 
 .ds-about-section section {
 	border-radius: 15px;
-	background-color: #ffffff87;
+	background-color: #ffffffac;
 	padding: 15px;
-	box-shadow: 0px 0px 7px rgba(0, 0, 0, 26);
+	border: 1px solid #000;
+	box-shadow: 0px 0px 7px #000;
 }
 
 .ds-heading {
 	display: inline-block;
 	font-weight: 700;
 	color: #000;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	letter-spacing: 1px;
 	font-size: 18px;
-	border-bottom: 3px solid #000000;
-	padding-bottom: 7px;
+	border-bottom: 4px solid #575757;
+	padding-bottom: 6px;
 	margin-bottom: 25px;
 }
 
@@ -362,18 +362,16 @@ figcaption {
 	justify-content: center;
 }
 
-
 .ds-button {
 	display: inline-block;
-	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: 2px;
 	color: white;
 	background-color: #74709a;
-	padding: 17px 20px;
+	padding: 17px;
 	border: 2px solid #74709a;
-	border-radius: 20px;
+	border-radius: 18px;
 
 }
 
@@ -411,13 +409,13 @@ figcaption {
 	color: #000;
 	font-size: 16px;
 	padding: 10px;
-	background-color: #ffffff87;
-	border: 3px solid #7e7e7e;
+	background-color: #ffffffac;
+	border: 2px solid #535353;
 	border-radius: 27px;
 	margin-right: 12px;
 	margin-bottom: 12px;
 	font-weight: 500;
-	box-shadow: 0px 0px 7px rgba(0, 0, 0, 26);
+	box-shadow: 0px 0px 7px #343434;
 }
 
 /*-----------------------------------------------------------------
@@ -433,18 +431,24 @@ figcaption {
 .ds-experience-section summary {
 	color: #fff;
 	font-size: 20px;
-	background-color: #74709a;
+	background-color: #646087;
 	border-radius: 10px;
 	width: 120px;
 	padding: 5px;
 }
 
+.ds-experience-section summary:hover {
+	background-color: #544f83;
+	color: #FFF;
+	box-shadow: 0px 0px 7px #000000;
+}
+
 
 .ds-experience-list section {
 	padding: 20px;
-	border: 2px rgb(164, 164, 164) solid;
-	border-radius: 10px;
-	background-color: #ffffff87;
+	border: 1px solid #000;
+	border-radius: 15px;
+	background-color: #ffffffac;
 	box-shadow: 0px 0px 9px rgba(0, 0, 0, 26);
 }
 
@@ -513,7 +517,7 @@ span.ds-department {
 
 /*-----------------------------------------------------------------
   6. >>> Work Style
-----------------------------------------------------------------*/
+----------------------------------------------------------------
 
 .ds-work-section {
 	padding-bottom: 80px;
@@ -610,16 +614,15 @@ span.ds-department {
 	height: 7px;
 	background-color: #373737;
 }
-
+**/
 /*-----------------------------------------------------------------
   7. >>> Footer Style
 ----------------------------------------------------------------*/
 
 .ds-footer {
-
 	padding: 40px;
-	background-color: #bcbddd87;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 26);
+	box-shadow: 0px 0px 10px #000;
+	background-color: #000b60;
 
 }
 
@@ -633,19 +636,11 @@ span.ds-department {
 	padding-bottom: 20px;
 }
 
-.ds-footer section h2 {
-	color: #FFF;
-	font-weight: bold;
-	-webkit-text-stroke-color: #000;
-	-webkit-text-stroke-width: 1px;
-
-}
-
 .ds-footer section p {
-	letter-spacing: 1.13px;
 	color: #FFF;
-	font-size: 18px;
-	margin-bottom: 40px;
+	font-size: 29px;
+	font-weight: bold;
+
 }
 
 .ds-copyright {
@@ -662,11 +657,28 @@ span.ds-department {
 	color: #6664f2;
 }
 
+.mail {
+	color: #FFF;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	color: white;
+	background-color: #544f83;
+	padding: 15px;
+	border: 2px solid #000;
+	border-radius: 10px;
+}
 
+.mail:hover {
+	background-color: #4e4882;
+	color: #FFF;
+	box-shadow: 0px 0px 7px #000000;
+}
 
 /*-------------------------------------------------------------------------------
  Responsive XS Style @media (max-width: 767px) 
 -------------------------------------------------------------------------------*/
+
 @media (max-width: 768px) {
 
 	.ds-header,
@@ -680,8 +692,8 @@ span.ds-department {
 	.ds-experience-section,
 	.ds-work-section,
 	.ds-work-details-section {
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 9px;
+		padding-right: 9px;
 	}
 
 	.ds-logo {
