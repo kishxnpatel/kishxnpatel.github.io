@@ -9,7 +9,7 @@ body {
 	font-style: normal;
 	font-display: optional;
 	background:
-		radial-gradient(circle at 50% 77%, rgb(105, 127, 252), rgba(0, 255, 0, 0));
+		radial-gradient(circle at 50% 77%, rgba(135, 153, 255, 0.925), rgba(0, 255, 0, 0));
 }
 
 .prevent-select {
@@ -125,7 +125,7 @@ img {
 .ds-header.ds-fixed-header {
 	padding: 20px;
 	box-shadow: 0px 0px 20px #373737;
-	background-color: rgba(159, 172, 245, 0.584);
+	background-color: rgba(184, 195, 255, 0.584);
 }
 
 .ds-header-inner {
@@ -263,7 +263,7 @@ small {
 	font-weight: 800;
 	font-size: 33px;
 	line-height: 50px;
-	color: #000;
+	color: #373737;
 
 
 }
@@ -338,7 +338,8 @@ figcaption {
 	border-radius: 15px;
 	background-color: #ffffffae;
 	padding: 15px;
-	color: #000;
+	color: #373737;
+	font-weight: 500;
 	border: 1px solid #000;
 	box-shadow: 0px 0px 7px #000;
 }
@@ -350,15 +351,15 @@ figcaption {
 	text-transform: capitalize;
 	letter-spacing: 1px;
 	font-size: 18px;
-	border-bottom: 4px solid #575757;
+	border-bottom: 4px solid #707ba5;
 	padding-bottom: 6px;
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 }
 
 .ds-about-section p {
-	color: #000;
+	color: #303030;
 	font-size: 17px;
-	font-weight: 300;
+	font-weight: 400;
 	margin-bottom: 30px;
 	justify-content: center;
 }
@@ -411,7 +412,7 @@ figcaption {
 	font-size: 16px;
 	padding: 10px;
 	background-color: #ffffffb7;
-	border: 2px solid #373737;
+	border: 2px solid #575757;
 	border-radius: 27px;
 	margin-right: 12px;
 	margin-bottom: 12px;
@@ -429,25 +430,9 @@ figcaption {
 
 }
 
-.ds-experience-section summary {
-	color: #fff;
-	font-size: 20px;
-	background-color: #646087;
-	border-radius: 10px;
-	width: 120px;
-	padding: 5px;
-}
-
-.ds-experience-section summary:hover {
-	background-color: #544f83;
-	color: #FFF;
-	box-shadow: 0px 0px 7px #000000;
-}
-
-
 .ds-experience-list section {
 	padding: 20px;
-	border: 1px solid #000;
+	border: 2px solid #454545;
 	border-radius: 15px;
 	background-color: #ffffffac;
 	box-shadow: 0px 0px 9px rgba(0, 0, 0, 26);
@@ -515,6 +500,22 @@ span.ds-department {
 	width: 8px;
 	height: 8px;
 	background-color: #373737;
+}
+
+.ds-experience-section summary {
+	color: #fff;
+	font-size: 20px;
+	background-color: #646087;
+	border-radius: 11px;
+	border: 2px solid #2d2d2d;
+	width: 120px;
+	padding: 5px;
+}
+
+.ds-experience-section summary:hover {
+	background-color: #544f83;
+	color: #FFF;
+	box-shadow: 0px 0px 7px #454545;
 }
 
 /*-----------------------------------------------------------------
@@ -624,7 +625,7 @@ span.ds-department {
 .ds-footer {
 	padding: 40px;
 	box-shadow: 0px 0px 10px #000;
-	background-color: #19215b46;
+	background-color: #373f7746;
 
 }
 
@@ -667,7 +668,7 @@ span.ds-department {
 	color: white;
 	background-color: #544f83;
 	padding: 15px;
-	border: 2px solid #000;
+	border: 2px solid #2d2d2d;
 	border-radius: 10px;
 }
 
