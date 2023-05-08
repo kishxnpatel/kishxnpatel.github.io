@@ -230,9 +230,11 @@ img {
   2. >>> Banner Style
 ----------------------------------------------------------------*/
 
+
 .ds-banner {
 	padding-top: 20px;
 }
+
 
 .my {
 	box-shadow: 0px 0px 10px #373737;
@@ -242,9 +244,19 @@ img {
 
 }
 
+figure {
+	padding: 0px 0px 0px 110px;
+}
+
+figcaption {
+	text-align: center;
+	color: #fff;
+	font-style: italic;
+	background-color: #000;
+}
+
 .ds-banner section {
-	padding-left: 100px;
-	padding-right: 100px;
+	padding: 40px;
 }
 
 small {
@@ -261,7 +273,7 @@ small {
 
 .ds-banner section h1 {
 	font-weight: 800;
-	font-size: 33px;
+	font-size: 30px;
 	line-height: 50px;
 	color: #373737;
 
@@ -310,20 +322,6 @@ small {
 	margin-top: 20px;
 }
 
-figure {
-	border: 1px #cccccc solid;
-	box-shadow: 0px 0px 7px rgba(0, 0, 0, 20);
-	border-radius: 10px;
-	border: 10px solid rgba(114, 114, 114, 0.978);
-	height: auto;
-}
-
-figcaption {
-	text-align: center;
-	color: #fff;
-	font-style: italic;
-	background-color: #000;
-}
 
 .ds-section-img {
 	padding-top: 50px;
@@ -701,6 +699,10 @@ span.ds-department {
 
 	.ds-logo {
 		font-size: 0;
+	}
+
+	figure {
+		padding: 17px;
 	}
 
 	.ds-banner section {
