@@ -8,8 +8,7 @@ body {
 	overflow-x: hidden;
 	font-style: normal;
 	font-display: optional;
-	background:
-		radial-gradient(circle at 50% 77%, rgba(135, 153, 255, 0.925), rgba(0, 255, 0, 0));
+	background: #e0e0e0;
 }
 
 .prevent-select {
@@ -125,13 +124,40 @@ img {
 .ds-header.ds-fixed-header {
 	padding: 20px;
 	box-shadow: 0px 0px 20px #373737;
-	background-color: rgba(184, 195, 255, 0.584);
+	background-color: #e0e0e0d4;
 }
 
 .ds-header-inner {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.ds-header-inner .bot {
+	padding: 10px;
+	--bg: #74709a;
+	--text-color: #fff;
+	width: 130px;
+	height: 36px;
+	border: none;
+	font-size: 15px;
+	background: var(--bg);
+	color: var(--text-color);
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: 0.2s;
+	border-radius: 5px;
+	opacity: 0.8;
+	box-shadow: #5d597a 0px 7px 2px, #000 0px 8px 5px;
+}
+
+.ds-header-inner a:hover {
+	opacity: 1;
+}
+
+.ds-header-inner a:active {
+	top: 4px;
+	box-shadow: #c0392b 0px 3px 2px, #000 0px 3px 5px;
 }
 
 .ds-logo {
@@ -170,7 +196,7 @@ img {
 }
 
 .ds-social li {
-	margin-left: 12px;
+	margin-left: 10px;
 }
 
 .ds-social li:first-child {
@@ -206,7 +232,7 @@ img {
 
 }
 
-.ds-social li .link1 {
+.ds-social li .insta {
 	border-radius: 100%;
 	color: #FFF;
 	width: 36px;
@@ -234,7 +260,6 @@ img {
 .ds-banner {
 	padding-top: 20px;
 }
-
 
 .my {
 	box-shadow: 0px 0px 10px #373737;
@@ -330,16 +355,16 @@ small {
 .ds-about-section {
 	padding-top: 60px;
 	padding-bottom: 120px;
+
 }
 
 .ds-about-section section {
-	border-radius: 15px;
-	background-color: #ffffffae;
-	padding: 15px;
+	border-radius: 32px;
+	background: rgb(212, 214, 223);
+	padding: 18px;
 	color: #373737;
 	font-weight: 500;
-	border: 1px solid #000;
-	box-shadow: 0px 0px 7px #000;
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .ds-heading {
@@ -363,22 +388,20 @@ small {
 }
 
 .ds-button {
-	display: inline-block;
 	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: 2px;
-	color: white;
-	background-color: #74709a;
-	padding: 17px;
-	border: 2px solid #74709a;
-	border-radius: 18px;
-
-}
-
-.ds-button:hover {
-	background-color: #707ba5;
-	color: #FFF;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 26);
+	padding: 8px;
+	--bg: #74709a;
+	--text-color: #fff;
+	border: none;
+	font-size: 15px;
+	background: var(--bg);
+	color: var(--text-color);
+	transition: 0.2s;
+	border-radius: 5px;
+	opacity: 0.6;
+	box-shadow: #5d597a 0px 7px 2px, #000 0px 8px 5px;
 }
 
 .ds-arrow-button i {
@@ -409,13 +432,12 @@ small {
 	color: #000;
 	font-size: 16px;
 	padding: 10px;
-	background-color: #ffffffb7;
-	border: 2px solid #575757;
-	border-radius: 27px;
+	background-color: rgb(212, 214, 223);
+	border-radius: 25px;
 	margin-right: 12px;
-	margin-bottom: 12px;
+	margin-bottom: 16px;
 	font-weight: 500;
-	box-shadow: 0px 0px 7px #343434;
+	box-shadow: rgba(255, 255, 255, 0.7) 0px -15px 12px 0px inset, rgba(118, 118, 118, 0.541) 0px -26px 20px 0px inset, rgba(209, 209, 209, 0.575) 0px -59px 20px 0px inset, rgba(0, 0, 0, 0.638) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.72) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 /*-----------------------------------------------------------------
@@ -429,11 +451,10 @@ small {
 }
 
 .ds-experience-list section {
-	padding: 20px;
-	border: 2px solid #454545;
-	border-radius: 15px;
-	background-color: #ffffffac;
-	box-shadow: 0px 0px 9px rgba(0, 0, 0, 26);
+	padding: 30px;
+	border-radius: 35px;
+	background-color: rgb(212, 214, 223);
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .ds-experience-list {
@@ -501,19 +522,28 @@ span.ds-department {
 }
 
 .ds-experience-section summary {
-	color: #fff;
 	font-size: 20px;
-	background-color: #646087;
-	border-radius: 11px;
-	border: 2px solid #2d2d2d;
+	font-weight: 600;
+	letter-spacing: 2px;
+	padding: 10px;
 	width: 120px;
-	padding: 5px;
+	--bg: #74709a;
+	--text-color: #fff;
+	border: none;
+	font-size: 15px;
+	background: var(--bg);
+	color: var(--text-color);
+	transition: 0.2s;
+	border-radius: 6px;
+	opacity: 0.8;
+	box-shadow: #5d597a 0px 7px 2px, #000 0px 8px 5px;
+
 }
 
 .ds-experience-section summary:hover {
-	background-color: #544f83;
+
 	color: #FFF;
-	box-shadow: 0px 0px 7px #454545;
+	opacity: 1;
 }
 
 /*-----------------------------------------------------------------
@@ -622,8 +652,8 @@ span.ds-department {
 
 .ds-footer {
 	padding: 40px;
-	box-shadow: 0px 0px 10px #000;
-	background-color: #373f7746;
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.802) 0px 32px 16px;
+	background-color: rgb(212, 214, 223);
 
 }
 
@@ -638,7 +668,7 @@ span.ds-department {
 }
 
 .ds-footer section p {
-	color: #FFF;
+	color: #000;
 	font-size: 29px;
 	font-weight: bold;
 
@@ -793,7 +823,7 @@ span.ds-department {
 	}
 
 	.ds-button {
-		padding: 11px 10px;
+		padding: 8px 7px;
 	}
 
 	.ds-work-details-section {
