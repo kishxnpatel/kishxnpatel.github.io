@@ -37,3 +37,7 @@ document.onkeydown = function (e) {
 	}
 
 }
+
+$(window).load(function () {
+	$('.preloader').fadeOut('slow');
+});
