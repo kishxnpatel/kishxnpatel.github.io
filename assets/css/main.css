@@ -336,11 +336,10 @@ small {
 ----------------------------------------------------------------*/
 
 .gif {
-	box-shadow: 0px 0px 10px #373737;
+	height: 310px;
 	border-radius: 15px;
-	border: 2px solid #343434;
 	width: auto;
-	margin-top: 20px;
+	margin: 0px 20px 0px 40px;
 }
 
 
