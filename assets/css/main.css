@@ -339,7 +339,8 @@ small {
 	height: 310px;
 	border-radius: 15px;
 	width: auto;
-	margin: 0px 20px 0px 40px;
+	margin-left: 40px;
+	margin-top: 20px;
 }
 
 
