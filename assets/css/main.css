@@ -351,7 +351,6 @@ small {
 .ds-about-section {
 	padding-top: 60px;
 	padding-bottom: 120px;
-
 }
 
 .ds-about-section section {
@@ -439,7 +438,10 @@ small {
 /*-----------------------------------------------------------------
   5. >>> Experience Style
 ----------------------------------------------------------------*/
+.expimg {
+	height: 120px;
 
+}
 
 .ds-experience-section {
 	padding-bottom: 120px;
