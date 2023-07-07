@@ -1,6 +1,5 @@
 html {
 	scroll-behavior: smooth;
-
 }
 
 body {
@@ -76,7 +75,6 @@ ul {
 	margin: 0;
 }
 
-
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -94,7 +92,6 @@ h5,
 h6 {
 	font-family: "Lucida Console", "Courier New", monospace;
 }
-
 
 svg,
 img {
@@ -119,7 +116,6 @@ img {
 	transition-property: all;
 	transition-timing-function: ease;
 }
-
 
 .ds-header.ds-fixed-header {
 	padding: 20px;
@@ -297,8 +293,6 @@ small {
 	font-size: 30px;
 	line-height: 50px;
 	color: #373737;
-
-
 }
 
 .ds-numbervalulist {
@@ -354,15 +348,14 @@ small {
 }
 
 .ds-about-section section {
-	border-radius: 32px;
+	border-radius: 22px;
 	background: #e8e8e8;
-	padding: 18px;
+	padding: 1px 10px 0px 10px;
 	color: #373737;
 	font-weight: 500;
 	border: 1px solid #373737;
-	box-shadow: 20px 20px 60px #bebebe,
-		-20px -20px 60px #ffffff;
-
+	box-shadow: 10px 10px 40px #bebebe,
+		-10px -10px 40px #ffffff;
 }
 
 .ds-heading {
@@ -429,10 +422,10 @@ small {
 	border-radius: 20px;
 	margin-right: 12px;
 	margin-bottom: 16px;
-	font-weight: 500;
-	border: 3px solid #373737;
+	font-weight: 700;
+	border: 3px solid rgba(55, 55, 55, 0.551);
 	box-shadow: 15px 15px 40px #a1a1a1,
-		-15px -15px 40px #ffffff;
+		-14px -14px 40px #ffffff;
 }
 
 /*-----------------------------------------------------------------
@@ -450,11 +443,11 @@ small {
 
 .ds-experience-list section {
 	padding: 24px;
-	border-radius: 30px;
+	border-radius: 20px;
 	background-color: #e8e8e8;
 	border: 1px solid #373737;
-	box-shadow: 20px 20px 60px #c5c5c5,
-		-20px -20px 60px #ffffff;
+	box-shadow: 10px 10px 40px #c5c5c5,
+		-10px -10px 40px #ffffff;
 }
 
 .ds-experience-list {
@@ -532,7 +525,6 @@ span.ds-department {
 	width: 135px;
 	border: 2px solid #2d2d2d;
 	border-radius: 10px;
-
 }
 
 .ds-experience-section summary:hover {
@@ -665,7 +657,6 @@ span.ds-department {
 	color: #090909;
 	font-size: 29px;
 	font-weight: bold;
-
 }
 
 .ds-copyright {
@@ -842,12 +833,10 @@ span.ds-department {
 	}
 }
 
-
 @media (min-width: 768px) and (max-width: 991px) {
 	.ds-work-list section {
 		padding-right: 30px;
 	}
-
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -859,6 +848,4 @@ span.ds-department {
 		padding-right: 30px;
 		padding-bottom: 60px;
 	}
-
-
 }
