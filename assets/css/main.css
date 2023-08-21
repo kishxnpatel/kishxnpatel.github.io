@@ -7,7 +7,7 @@ body {
 	overflow-x: hidden;
 	font-style: normal;
 	font-display: optional;
-	background: #eeeeee;
+	background: #f6f6f6;
 }
 
 .prevent-select {
@@ -120,7 +120,7 @@ img {
 .ds-header.ds-fixed-header {
 	padding: 20px;
 	box-shadow: 0px 0px 20px #373737;
-	background-color: #e8e8e8f5;
+	background-color: #f6f6f6f5;
 }
 
 .ds-header-inner {
@@ -139,7 +139,7 @@ img {
 	font-weight: 600;
 	background-color: #544f83;
 	border: 2px solid #2d2d2d;
-	border-radius: 10px;
+	border-radius: 7px;
 }
 
 .ds-header-inner a:hover {
@@ -337,7 +337,6 @@ small {
 	margin-top: 20px;
 }
 
-
 .ds-section-img {
 	padding-top: 50px;
 }
@@ -349,12 +348,12 @@ small {
 
 .ds-about-section section {
 	border-radius: 22px;
-	background: #e8e8e8;
+	background: #efefef;
 	padding: 1px 10px 0px 10px;
 	color: #373737;
 	font-weight: 500;
-	border: 1px solid #373737;
-	box-shadow: 2px 2px 5px #a9a9a9;
+	border: 1px solid #b0b0b0;
+	box-shadow: 5px 5px 5px #a9a9a9;
 }
 
 .ds-heading {
@@ -417,7 +416,7 @@ small {
 	color: #090909;
 	font-size: 16px;
 	padding: 12px;
-	background-color: rgb(212, 214, 223);
+	background-color: rgb(220, 221, 224);
 	border-radius: 20px;
 	margin-right: 12px;
 	margin-bottom: 16px;
@@ -442,7 +441,7 @@ small {
 
 .ds-experience-list section {
 	padding: 24px;
-	border-radius: 20px;
+	border-radius: 14px;
 	background-color: #e8e8e8;
 	border: 1px solid #373737;
 	box-shadow: 10px 8px 10px #c5c5c5,
@@ -523,7 +522,7 @@ span.ds-department {
 	background-color: #544f83;
 	width: 135px;
 	border: 2px solid #2d2d2d;
-	border-radius: 10px;
+	border-radius: 7px;
 }
 
 .ds-experience-section summary:hover {
