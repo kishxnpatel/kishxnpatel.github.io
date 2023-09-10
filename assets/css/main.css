@@ -353,7 +353,7 @@ small {
 	color: #373737;
 	font-weight: 500;
 	border: 1px solid #b0b0b0;
-	box-shadow: 5px 5px 5px #a9a9a9;
+	box-shadow: 2px 5px 5px #a9a9a9;
 }
 
 .ds-heading {
@@ -706,8 +706,8 @@ span.ds-department {
 	.ds-experience-section,
 	.ds-work-section,
 	.ds-work-details-section {
-		padding-left: 9px;
-		padding-right: 9px;
+		padding-left: 7px;
+		padding-right: 7px;
 	}
 
 	.ds-logo {
