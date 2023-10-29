@@ -835,7 +835,8 @@ span.ds-department {
 	}
 
 	.ds-skills-section .col-12,
-	.ds-experience-list .col-12 {
+	.ds-experience-list .col-12,
+	.ds-edu-section .col-12 {
 		margin-bottom: 40px;
 	}
 
