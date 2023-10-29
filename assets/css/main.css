@@ -136,7 +136,7 @@ img {
 	color: #FFF;
 	letter-spacing: 2px;
 	color: white;
-	font-weight: 600;
+	font-weight: 500;
 	background-color: #544f83;
 	border: 2px solid #2d2d2d;
 	border-radius: 7px;
@@ -252,17 +252,17 @@ img {
 
 .ds-banner {
 	padding-top: 20px;
+	padding-bottom: 40px;
 }
 
 .my {
 	border-radius: 15px;
 	border: 2px solid #343434;
 	width: auto;
-
 }
 
 figure {
-	padding: 37px 0px 0px 145px;
+	padding: 38px 0px 0px 100px;
 }
 
 figcaption {
@@ -343,7 +343,7 @@ small {
 
 .ds-about-section {
 	padding-top: 60px;
-	padding-bottom: 120px;
+	padding-bottom: 10px;
 }
 
 .ds-about-section section {
@@ -354,6 +354,7 @@ small {
 	font-weight: 500;
 	border: 1px solid #b0b0b0;
 	box-shadow: 2px 5px 5px #a9a9a9;
+
 }
 
 .ds-heading {
@@ -394,11 +395,76 @@ small {
 }
 
 /*-----------------------------------------------------------------
+ >>> EDUCATION 
+---------------------------------------------------------------*/
+
+.ds-edu-section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.ds-edu-section section {
+	border-radius: 14px;
+	background: #efefef;
+	padding: 10px;
+	color: #373737;
+	font-weight: 500;
+	border: 1px solid #b0b0b0;
+	box-shadow: 2px 5px 5px #a9a9a9;
+
+}
+
+.ds-edu-section p {
+	color: #303030;
+	justify-content: center;
+}
+
+.sait {
+	width: 100px;
+	height: auto;
+	border-radius: 14px;
+	border: 1px solid #000000;
+}
+
+.ds-edu-section .ds-curt {
+	color: green;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.ds-edu-section .ds-cllg {
+	color: #373737;
+	font-weight: 600;
+	font-size: 18px;
+
+}
+
+.ds-edu-section .ds-clglink {
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 5px;
+	/*color: #af1a1a;*/
+	text-decoration: uppercase;
+}
+
+.ds-edu-section .ds-clglink a {
+	color: #af1a1a;
+	font-weight: 600;
+}
+
+.ds-edu-section p {
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #373737;
+}
+
+/*-----------------------------------------------------------------
   4. >>> Skills Style
 ----------------------------------------------------------------*/
 
 .ds-skills-section {
-	padding-bottom: 105px;
+	padding-bottom: 60px;
 }
 
 .ds-skills-list {
@@ -701,6 +767,7 @@ span.ds-department {
 	}
 
 	.ds-banner,
+	.ds-banner section,
 	.ds-about-section,
 	.ds-skills-section,
 	.ds-experience-section,
@@ -715,12 +782,11 @@ span.ds-department {
 	}
 
 	figure {
-		padding: 17px;
+		padding: 16px;
 	}
 
 	.ds-banner section {
-		padding-left: 0;
-		padding-right: 0;
+		padding: 12px;
 	}
 
 	.ds-banner section h1 span {
@@ -751,7 +817,7 @@ span.ds-department {
 	}
 
 	.ds-about-section {
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 	}
 
 
@@ -760,13 +826,12 @@ span.ds-department {
 	.ds-work-content-sec li {
 		font-size: 15px;
 		line-height: 30px;
-		margin-bottom: 20px;
+
 	}
 
 	.ds-skills-list li {
-		margin-right: 10px;
 		margin-bottom: 10px;
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.ds-skills-section .col-12,
