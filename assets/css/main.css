@@ -824,7 +824,8 @@ span.ds-department {
 	.ds-about-section p,
 	.ds-work-content-sec p,
 	.ds-work-content-sec li {
-		font-size: 15px;
+		font-size: 16px;
+		font-weight: 500;
 		line-height: 30px;
 
 	}
