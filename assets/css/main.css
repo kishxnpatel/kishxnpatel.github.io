@@ -406,10 +406,10 @@ small {
 .ds-edu-section section {
 	border-radius: 14px;
 	background: #efefef;
-	padding: 10px;
+	padding: 14px;
 	color: #373737;
 	font-weight: 500;
-	border: 1px solid #b0b0b0;
+	border: 1px solid #373737;
 	box-shadow: 2px 5px 5px #a9a9a9;
 
 }
@@ -495,10 +495,6 @@ small {
 /*-----------------------------------------------------------------
   5. >>> Experience Style
 ----------------------------------------------------------------*/
-.expimg {
-	height: 120px;
-
-}
 
 .ds-experience-section {
 	padding-bottom: 120px;
@@ -506,7 +502,7 @@ small {
 }
 
 .ds-experience-list section {
-	padding: 24px;
+	padding: 15px;
 	border-radius: 14px;
 	background-color: #e8e8e8;
 	border: 1px solid #373737;
@@ -540,7 +536,7 @@ span.ds-year {
 span.ds-department {
 	color: #373737;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 23px;
 	padding-bottom: 10px;
 }
 
@@ -847,9 +843,6 @@ span.ds-department {
 		padding-bottom: 0;
 	}
 
-	.ds-experience-list section {
-		padding-right: 0;
-	}
 
 	.ds-work-list {
 		padding: 30px;
