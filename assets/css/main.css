@@ -7,8 +7,8 @@ body {
 	overflow-x: hidden;
 	font-style: normal;
 	font-display: optional;
-	background: rgb(238,174,202);
-background: radial-gradient(circle, rgb(255, 190, 218) 0%, rgba(148,187,233,1) 100%);
+	background: rgb(255, 200, 224);
+    background: radial-gradient(circle, rgb(255, 201, 225) 0%, rgb(188, 220, 255) 100%);
 }
 
 .prevent-select {
@@ -701,11 +701,9 @@ span.ds-department {
 
 .ds-footer {
 	padding: 40px;
-	background: rgb(201, 210, 255);
-background: radial-gradient(circle, rgb(173, 187, 255) 0%, rgb(255, 201, 212) 100%);
-	border:2px solid black;
+	border:1px solid black;
 	text-align: center;
-	backdrop-filter: blur(17px);
+	backdrop-filter: blur(7px);
 
 }
 
@@ -765,7 +763,7 @@ background: radial-gradient(circle, rgb(173, 187, 255) 0%, rgb(255, 201, 212) 10
 
 	.ds-header,
 	.ds-header.ds-fixed-header {
-		padding: 15px;
+		padding: 17px;
 	}
 
 	.ds-banner,
@@ -775,8 +773,8 @@ background: radial-gradient(circle, rgb(173, 187, 255) 0%, rgb(255, 201, 212) 10
 	.ds-experience-section,
 	.ds-work-section,
 	.ds-work-details-section {
-		padding-left: 7px;
-		padding-right: 7px;
+		padding-left: 1px;
+		padding-right: 1px;
 	}
 
 	.ds-logo {
