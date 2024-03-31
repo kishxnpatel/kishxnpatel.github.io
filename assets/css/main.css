@@ -3,12 +3,12 @@ html {
 }
 
 body {
-	font-family: "Lucida Console", "Courier New", monospace;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	overflow-x: hidden;
 	font-style: normal;
+	letter-spacing: 0.5px;
 	font-display: optional;
-	font-weight: 400;
-    background-color: #e8e8e8;
+	background-color: #e8e8e8;
 }
 
 .prevent-select {
@@ -91,7 +91,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Lucida Console", "Courier New", monospace;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 svg,
@@ -122,6 +122,7 @@ img {
 	padding: 20px;
 	box-shadow: 0px 0px 20px #373737;
 	background-color: #ffffff80;
+	-webkit-backdrop-filter: blur(7px);
 	backdrop-filter: blur(7px);
 }
 
@@ -251,7 +252,6 @@ img {
   2. >>> Banner Style
 ----------------------------------------------------------------*/
 
-
 .ds-banner {
 	padding-top: 20px;
 	padding-bottom: 40px;
@@ -260,8 +260,8 @@ img {
 .my {
 	border-radius: 20px;
 	border: 1px solid #b3b3b3;
-	box-shadow: 14px 14px 25px #a3a3a3,
-             -15px -15px 25px #ffffff;
+	box-shadow: 5px 5px 5px #a3a3a3,
+		-7px -7px 7px #ffffff;
 	width: auto;
 }
 
@@ -277,7 +277,7 @@ figcaption {
 }
 
 .ds-banner section {
-	padding: 40px;
+	padding: 9%;
 }
 
 small {
@@ -334,11 +334,11 @@ small {
 ----------------------------------------------------------------*/
 
 .gif {
-	height: 310px;
+	height: 320px;
 	border-radius: 15px;
 	width: auto;
-	margin-left: 50px;
-	margin-top: 10px;
+	filter: contrast(1.15);
+	margin-left: 60px;
 }
 
 .ds-section-img {
@@ -352,12 +352,13 @@ small {
 
 .ds-about-section section {
 	border-radius: 18px;
-	padding: 10px;
+	padding: 1px 15px 2px 15px;
 	color: #373737;
-	font-weight: 500;
+	letter-spacing: 0.5px;
+	line-height: 35px;
 	background-color: #e0e0e0;
-	box-shadow: 14px 14px 25px #a3a3a3,
-             -15px -15px 25px #ffffff;
+	box-shadow: 5px 5px 5px #a3a3a3,
+		-7px -7px 7px #ffffff;
 
 }
 
@@ -412,8 +413,8 @@ small {
 	color: #373737;
 	font-weight: 500;
 	background-color: #e0e0e0;
-	box-shadow: 14px 14px 25px #a3a3a3,
-             -15px -15px 25px #ffffff;
+	box-shadow: 5px 5px 5px #a3a3a3,
+		-7px -7px 7px #ffffff;
 }
 
 .ds-edu-section p {
@@ -489,8 +490,8 @@ small {
 	margin-bottom: 18px;
 	font-weight: 700;
 	background-color: #e0e0e0;
-	box-shadow: 12px 12px 20px #a3a3a3,
-             -10px -10px 20px #ffffff;
+	box-shadow: 5px 5px 5px #a3a3a3,
+		-7px -7px 7px #ffffff;
 }
 
 /*-----------------------------------------------------------------
@@ -506,8 +507,8 @@ small {
 	padding: 15px;
 	border-radius: 18px;
 	background-color: #e0e0e0;
-	box-shadow: 14px 14px 25px #a3a3a3,
-             -15px -15px 25px #ffffff;
+	box-shadow: 5px 5px 5px #a3a3a3,
+		-7px -7px 7px #ffffff;
 }
 
 .ds-experience-list {
@@ -699,8 +700,9 @@ span.ds-department {
 
 .ds-footer {
 	padding: 40px;
-	border:1px solid black;
+	border: 1px solid black;
 	text-align: center;
+	-webkit-backdrop-filter: blur(7px);
 	backdrop-filter: blur(7px);
 
 }
