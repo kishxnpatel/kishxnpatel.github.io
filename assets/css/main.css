@@ -8,7 +8,7 @@ body {
 	font-style: normal;
 	letter-spacing: 0.5px;
 	font-display: optional;
-	background-color: #f0f0f0;
+	background-color: #fbfbfb;
 }
 
 .prevent-select {
@@ -141,8 +141,8 @@ img {
 	color: white;
 	font-weight: 500;
 	background-color: #544f83;
-	border: 2px solid #a3a3a3;
-	border-radius: 10px;
+	border: 1px solid #000000;
+	border-radius: 8px;
 }
 
 .ds-header-inner a:hover {
@@ -356,8 +356,8 @@ small {
 	color: #373737;
 	letter-spacing: 0.5px;
 	line-height: 35px;
-	background-color: #e0e0e0;
-	border: solid 3px #a3a3a3;
+	background-color: #ececec;
+	border: solid 3px #696969;
 	box-shadow: 4px 4px 4px #a3a3a3;
 		
 }
@@ -412,8 +412,8 @@ small {
 	padding: 14px;
 	color: #373737;
 	font-weight: 500;
-	background-color: #e0e0e0;
-	border: solid 2px #a3a3a3;
+	background-color: #ececec;
+	border: solid 2px #696969;
 	box-shadow: 4px 4px 4px #a3a3a3;
 		
 }
@@ -490,8 +490,8 @@ small {
 	margin-right: 14px;
 	margin-bottom: 18px;
 	font-weight: 700;
-	background-color: #e0e0e0;
-	border: solid 2px #a3a3a3;
+	background-color: #ececec;
+	border: solid 2px #696969;
 	box-shadow: 4px 4px 4px #a3a3a3;
 
 }
@@ -508,8 +508,8 @@ small {
 .ds-experience-list section {
 	padding: 15px;
 	border-radius: 10px;
-	background-color: #e0e0e0;
-	border: solid 2px #a3a3a3;
+	background-color: #ececec;
+	border: solid 2px #696969;
 	box-shadow: 4px 4px 4px #a3a3a3;
 		
 }
@@ -705,9 +705,6 @@ span.ds-department {
 	padding: 40px;
 	border: 1px solid black;
 	text-align: center;
-	-webkit-backdrop-filter: blur(7px);
-	backdrop-filter: blur(7px);
-
 }
 
 .ds-footer section span {
