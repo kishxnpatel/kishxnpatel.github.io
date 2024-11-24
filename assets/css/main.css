@@ -8,8 +8,10 @@ body {
 	font-style: normal;
 	letter-spacing: 0.5px;
 	font-display: optional;
-	background-color: #fbfbfb;
+	background-color: #f2f2f2;
 }
+
+
 
 .prevent-select {
 	-webkit-user-select: none;
@@ -350,13 +352,13 @@ small {
 
 .ds-about-section section {
 	border-radius: 18px;
-	padding: 1px 15px 2px 15px;
+	padding: 9px 15px 2px 15px;
 	color: #373737;
 	letter-spacing: 0.5px;
 	line-height: 35px;
-	background-color: #ececec;
-	border: solid 3px #696969;
-	box-shadow: 4px 4px 4px #a3a3a3;
+	background-color: #e8e8e8;
+	border: solid 2px #696969;
+	box-shadow: 8px 8px 8px #a3a3a3;
 		
 }
 
@@ -410,9 +412,9 @@ small {
 	padding: 14px;
 	color: #373737;
 	font-weight: 500;
-	background-color: #ececec;
+	background-color: #e8e8e8;
 	border: solid 2px #696969;
-	box-shadow: 4px 4px 4px #a3a3a3;
+	box-shadow: 8px 8px 8px #a3a3a3;
 		
 }
 
@@ -488,9 +490,9 @@ small {
 	margin-right: 14px;
 	margin-bottom: 18px;
 	font-weight: 700;
-	background-color: #ececec;
+	background-color: #e8e8e8;
 	border: solid 2px #696969;
-	box-shadow: 4px 4px 4px #a3a3a3;
+	box-shadow: 8px 8px 8px #a3a3a3;
 
 }
 
@@ -506,9 +508,9 @@ small {
 .ds-experience-list section {
 	padding: 15px;
 	border-radius: 10px;
-	background-color: #ececec;
+	background-color: #e8e8e8;
 	border: solid 2px #696969;
-	box-shadow: 4px 4px 4px #a3a3a3;
+	box-shadow: 8px 8px 8px #a3a3a3;
 		
 }
 
@@ -701,8 +703,10 @@ span.ds-department {
 
 .ds-footer {
 	padding: 40px;
-	border: 1px solid black;
+	border-top: 2px solid #373737;
 	text-align: center;
+	background-color: #e8e8e8;
+	
 }
 
 .ds-footer section span {
