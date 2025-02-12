@@ -3,7 +3,8 @@ html {
 }
 
 body {
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: 'Roboto', Arial, sans-serif;
+
 	overflow-x: hidden;
 	font-style: normal;
 	letter-spacing: 0.5px;
