@@ -348,8 +348,7 @@ small {
 
 .ds-about-section {
 	padding-top: 60px;
-	padding-bottom: 10px;
-}
+	}
 
 .ds-about-section section {
 	border-radius: 18px;
@@ -400,19 +399,17 @@ small {
 /*-----------------------------------------------------------------
  >>> EDUCATION 
 ---------------------------------------------------------------*/
-
 .ds-edu-section {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 0px;
 }
-
 .ds-edu-section section {
 	border-radius: 10px;
 	padding: 14px;
 	color: #373737;
 	font-weight: 500;
 	background-color: #fafafa;
-	border:1px solid #000000; 		
+	border:1px solid #555555; 	
+	margin: 10px;	
 }
 
 .ds-edu-section p {
