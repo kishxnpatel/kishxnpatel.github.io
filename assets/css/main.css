@@ -9,7 +9,7 @@ body {
 	font-style: normal;
 	letter-spacing: 0.5px;
 	font-display: optional;
-	background-color: #f2f2f2;
+	background-color: #ffffff;
 }
 
 
@@ -357,10 +357,8 @@ small {
 	color: #373737;
 	letter-spacing: 0.5px;
 	line-height: 35px;
-	background-color: #e8e8e8;
-	border: solid 2px #696969;
-	box-shadow: 8px 8px 8px #a3a3a3;
-		
+	background-color: #fafafa;
+	border: 1px solid #000000;
 }
 
 .ds-heading {
@@ -413,10 +411,8 @@ small {
 	padding: 14px;
 	color: #373737;
 	font-weight: 500;
-	background-color: #e8e8e8;
-	border: solid 2px #696969;
-	box-shadow: 8px 8px 8px #a3a3a3;
-		
+	background-color: #fafafa;
+	border:1px solid #000000; 		
 }
 
 .ds-edu-section p {
@@ -491,9 +487,8 @@ small {
 	margin-right: 14px;
 	margin-bottom: 18px;
 	font-weight: 700;
-	background-color: #e8e8e8;
-	border: solid 2px #696969;
-	box-shadow: 8px 8px 8px #a3a3a3;
+	background-color: #fafafa;
+	border: solid 1px #000000;
 
 }
 
@@ -509,10 +504,8 @@ small {
 .ds-experience-list section {
 	padding: 15px;
 	border-radius: 10px;
-	background-color: #e8e8e8;
-	border: solid 2px #696969;
-	box-shadow: 8px 8px 8px #a3a3a3;
-		
+	background-color: #fafafa;
+	border:1px solid #000000;
 }
 
 .ds-experience-list {
@@ -704,9 +697,9 @@ span.ds-department {
 
 .ds-footer {
 	padding: 40px;
-	border-top: 2px solid #373737;
+	border-top: 1px solid #373737;
 	text-align: center;
-	background-color: #e8e8e8;
+	background-color: #fbfbfb;
 	
 }
 
