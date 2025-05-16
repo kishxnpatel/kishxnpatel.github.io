@@ -90,11 +90,6 @@ select:-webkit-autofill {
 /* Typography */
 
 
-svg,
-img {
-	max-width: 100%;
-	height: auto;
-}
 
 /*-----------------------------------------------------------------
   1. >>> Headr Style
@@ -254,9 +249,8 @@ img {
 .my {
 	border-radius: 10px;
 	border: 2px solid #a3a3a3;
-	
-padding: 3px;	
-	width: auto;
+	max-width: 95%;
+	height: auto;
 }
 
 figure {
@@ -340,7 +334,7 @@ small {
 }
 
 .ds-about-section {
-	padding-top: 60px;
+	padding-top: 0px;
 	}
 
 .ds-about-section section {
@@ -348,7 +342,7 @@ small {
 	padding: 9px 15px 2px 15px;
 	color: #373737;
 	letter-spacing: 0.5px;
-	line-height: 35px;
+	line-height: 26px;
 	background-color: #ffffff;
 	border: 1.5px solid #cecece;
 }
@@ -392,9 +386,7 @@ small {
 /*-----------------------------------------------------------------
  >>> EDUCATION 
 ---------------------------------------------------------------*/
-.ds-edu-section {
-	padding-top: 0px;
-}
+
 .ds-edu-section section {
 	border-radius: 12px;
 	padding: 14px;
@@ -455,7 +447,7 @@ small {
 ----------------------------------------------------------------*/
 
 .ds-skills-section {
-	padding-bottom: 60px;
+	padding-bottom: 10px;
 }
 
 .ds-skills-list {
