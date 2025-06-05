@@ -889,35 +889,3 @@ span.ds-department {
 		padding-bottom: 60px;
 	}
 }
-/* Project cards */
-.project-card {
-  background-color: #F6F8FA;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-.project-card h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.project-card p {
-  font-size: 14px;
-}
-.project-tech {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 10px;
-}
-.project-tech li {
-  display: inline-block;
-  background-color: #e9ecef;
-  margin: 2px;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-}
-#filter-buttons {
-  margin-bottom: 20px;
-}
