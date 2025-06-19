@@ -249,12 +249,12 @@ select:-webkit-autofill {
 .my {
 	border-radius: 10px;
 	border: 2px solid #a3a3a3;
-	max-width: 95%;
+	max-width: 100%;
 	height: auto;
 }
 
 figure {
-	padding: 38px 0px 0px 100px;
+	padding: 45px 0px 0px 100px;
 }
 
 figcaption {
