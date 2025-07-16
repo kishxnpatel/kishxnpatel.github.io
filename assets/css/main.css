@@ -242,7 +242,7 @@ select:-webkit-autofill {
 ----------------------------------------------------------------*/
 
 .ds-banner {
-	padding-top: 20px;
+	padding-top: 10px;
 	padding-bottom: 40px;
 }
 
@@ -254,7 +254,7 @@ select:-webkit-autofill {
 }
 
 figure {
-	padding: 45px 0px 0px 100px;
+	padding: 45px 0px 0px 90px;
 }
 
 figcaption {
@@ -265,7 +265,7 @@ figcaption {
 }
 
 .ds-banner section {
-	padding: 9%;
+	padding: 3%;
 }
 
 small {
@@ -282,7 +282,7 @@ small {
 
 .ds-banner section h1 {
 	font-weight: 500;
-	font-size: 30px;
+	font-size: 24px;
 	line-height: 50px;
 	color: #000;
 }
@@ -528,31 +528,19 @@ span.ds-department {
 }
 
 .ds-experience-list ol {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	padding: 10px;
+	list-style-type: disc;
 }
 
 .ds-experience-list ol li {
 	font-size: 16px;
-	line-height: 24px;
-	font-weight: 300;
-	padding-left: 18px;
+	line-height: 20px;
+	font-weight: 400;
+	padding-left: 1px;
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 
-.ds-experience-list ol li:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0px;
-	border-radius: 100%;
-	width: 8px;
-	height: 8px;
-	background-color: #373737;
-}
+
 
 .ds-experience-section summary {
 	color: #FFF;
@@ -774,8 +762,8 @@ span.ds-department {
 
 	.ds-banner section h1,
 	.ds-work-det-title {
-		font-size: 30px;
-		line-height: 40px;
+		font-size: 24px;
+		line-height: 35px;
 	}
 
 	.ds-numbervalulist {
