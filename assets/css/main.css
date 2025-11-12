@@ -201,6 +201,7 @@ ul {
     line-height: 26px;
     background-color: #ffffff;
     border: 1.5px solid #cecece;
+    margin-bottom: 20px;
 }
 
 .ds-heading {
@@ -363,11 +364,11 @@ ul {
 @media (max-width: 768px) {
     .profile-gradient-wrapper {
         position: relative;
-        width: 200px;  /* slightly bigger to show gradient ring */
-        height: 200px;
+        width: 190px;  /* slightly bigger to show gradient ring */
+        height: 190px;
         margin: 0 auto 15px auto; 
-        border-radius: 50%;
-        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        border-radius: 15%;
+        background: linear-gradient(135deg, #000000 10%, #eeeeee 80%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -376,11 +377,11 @@ ul {
     }
 
     .profile-gradient-wrapper img.my {
-        width: 190px;
-        height: 190px;
-        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+        border-radius: 15%;
         object-fit: cover;
-        border: 3px solid #fff; /* white border inside gradient */
+        border: 2px solid #fff; /* white border inside gradient */
     }
 
     .ds-header {
