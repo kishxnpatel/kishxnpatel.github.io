@@ -59,7 +59,7 @@ ul {
 	width: 100%;
 	height: auto;
 	z-index: 5;
-	padding: 18px;
+	padding: 12px;
 	transition-delay: 0s;
 	transition-duration: 0.3s;
 	transition-property: all;
@@ -68,7 +68,7 @@ ul {
 }
 
 .ds-header.ds-fixed-header {
-	padding: 20px;
+	padding: 10px;
 	box-shadow: 0px 0px 10px #373737;
 	background-color: #ffffffb6;
 }
@@ -100,7 +100,7 @@ ul {
     height: 33px;
     background-color: #090909;
     display: flex;
-    padding: 7px;
+    padding: 8px;
     justify-content: center;
     align-items: center;
     text-align: center;
