@@ -1,257 +1,403 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kishan Patel Portfolio</title>
+  <meta charset="utf-8" />
+  <title>Kishan Patel | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-  <!-- Remix Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-  <!-- Main CSS -->
-  <link href="assets/css/main.css" rel="stylesheet">
-  
-
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<body class="prevent-select" oncontextmenu="return false;">
+<body>
+  <!-- ========================
+         Navbar
+         ======================== -->
+  <nav class="navbar navbar-expand-md lp-navbar fixed-top">
+    <div class="container-xl">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <span class="fw-semibold small">Kishan Patel</span>
+      </a>
 
-  <!-- ===== HEADER ===== -->
-  <header class="ds-header" id="site-header">
-    <div class="container">
-      <div class="ds-header-inner">
-        <!-- Chatbot Button 
-        <a href="./chatbot" title="BotyChatbot" class="bot">Let’s Chat 🤖</a> -->
+      <button class="navbar-toggler lp-hamburger-btn collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="lp-hamburger-line line-1"></span>
+        <span class="lp-hamburger-line line-2"></span>
+        <span class="lp-hamburger-line line-3"></span>
+      </button>
 
-        <!-- Social Icons -->
-        <ul class="ds-social">
-         <!-- <li><span><b> </b></span></li>-->
-          <li><a href="https://github.com/kishxnpatel" title="GitHub" rel="noopener noreferrer" target="_blank" class="GitHub">
-           <i class="ri-github-fill"></i> &nbsp;/Kishxnpatel </a></li>
-           
-          <li><a href="https://linkedin.com/in/kishnpatel" title="LinkedIn" rel="noopener noreferrer" target="_blank"
-              class="link"><i class="ri-linkedin-fill"></i> &nbsp; /Kishnpatel</a></li>
-          <li><a href="mailto:kishxnpatel@gmail.com" title="Email" rel="noopener noreferrer" target="_blank"
-              class="insta"><i class="ri-mail-line"></i> &nbsp;Email</a></li>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0 small">
+          <li class="nav-item">
+            <a class="nav-link" href="#profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <!-- ===== BANNER ===== -->
-<div class="ds-banner"> 
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-4">
-        <figure class="profile-gradient-wrapper">
-          <img alt="Kishan Patel" src="assets/images/patell.png" class="my">
-        </figure>
-      </div>
-      <div class="col-md-8">
-        <section>
-          <h1>👋 Hey there!, I’m Kishan Patel</h1>
-          <p class="headline">
-           IT Support • DevOps fundamentals • Cybersecurity operations • Risk & controls
-          </p>
-        </section>
-      </div>
-    </div>
-  </div>
-</div>
+  <!-- ========================
+         Main layout
+         ======================== -->
+  <main class="py-2 py-md-4">
+    <div class="container-xl">
+      <div class="row g-4">
+        <!-- ========================
+               Left column
+               ======================== -->
+        <div class="col-lg-8">
+          <!-- Profile / Hero -->
+          <section id="profile" class="lp-card p-3 p-md-4 mb-3 lp-profile-card">
+            <!-- Profile banner -->
+            <div class="lp-profile-banner"></div>
 
+            <div class="d-flex flex-column flex-md-row align-items-md-center mt-1">
+              <!-- Avatar -->
+              <div class="me-md-4 d-flex justify-content-center lp-profile-avatar-wrap">
+                <div class="lp-avatar shadow-sm"></div>
+              </div>
 
-  <!-- ===== ABOUT ===== -->
-  <div class="ds-about-section">
-    <div class="container">
-      <div class="row">
-        <div>
-          <h2 class="ds-heading">About Me 📃</h2>
-          <section>
-            <p>
-             I focus on reliability, clear fixes, and tidy documentation. Day-to-day that’s Windows 10/11, Microsoft 365, AD user/group tasks, imaging (Intune/USB), and common desk-side issues (AV, printers, onboarding, asset updates). I keep ticket hygiene tight (ServiceNow/Jira), write simple KBs, and use light scripting (PowerShell/Python) for inventory/log parsing. I’m comfortable with basic Linux/CLI, networking checks (port/VLAN/DHCP/DNS), and change/incident procedures.</p>
-             <p> My cybersecurity training means I default to least privilege, patching, and safe configurations; my interest in DevOps has me thinking in terms of automation, logs, and repeatable runbooks. I’m Calgary-based, eligible to work anywhere in Canada, and ready to add value on site or hybrid.
+              <!-- Name + headline -->
+              <div class="flex-grow-1 mt-3 mt-md-0">
+                <h1 class="h4 mb-1">Kishan Patel</h1>
+                <p class="small mb-1 fw-medium">
+                  IT Support &amp; Cybersecurity · Windows 10/11 · M365 · AD ·
+                  Ticketing
+                </p>
+                <p class="small text-muted mb-2">
+                  Calgary, Alberta, Canada · Open to IT Support / Service Desk
+                  / Junior Sysadmin roles
+                </p>
+
+                <!-- Quick links -->
+                <div class="d-flex flex-wrap align-items-center gap-3 mt-2">
+                  <a href="https://www.linkedin.com/in/kishnpatel" target="_blank" class="lp-social-icon-link">
+                    <img src="assets/images/linkd.png" alt="LinkedIn" class="lp-social-icon" />
+                  </a>
+
+                  <a href="https://github.com/kishxn" target="_blank" class="lp-social-icon-link">
+                    <img src="assets/images/github.jpg" alt="GitHub" class="lp-social-icon" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- About -->
+          <section class="lp-card p-3 p-md-4 mb-3">
+            <h2 class="lp-section-title mb-0">About</h2>
+            <p class="small mt-2 mb-0">
+              I focus on reliability, clear fixes, and tidy documentation.
+              Day-to-day that’s Windows 10/11, Microsoft 365, AD user/group
+              tasks, imaging (Intune/USB), and common desk-side issues (AV,
+              printers, onboarding, asset updates). I keep ticket hygiene
+              tight (ServiceNow/Jira), write simple KBs, and use light
+              scripting (PowerShell/Python) for inventory/log parsing. I’m
+              comfortable with basic Linux/CLI, networking checks
+              (port/VLAN/DHCP/DNS), and change/incident procedures.
             </p>
-            
-           
+            <p class="small mt-3 mb-0">
+              My cybersecurity training means I default to least privilege,
+              patching, and safe configurations; my interest in DevOps has me
+              thinking in terms of automation, logs, and repeatable runbooks.
+              I’m Calgary-based, eligible to work anywhere in Canada, and
+              ready to add value on site or hybrid.
+            </p>
+          </section>
+
+          <!-- Experience -->
+          <section class="lp-card p-3 p-md-4 mb-3">
+            <h2 class="lp-section-title mb-0">Experience</h2>
+
+            <div class="mt-3">
+              <!-- Job 1 -->
+              <div class="mb-3">
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                  <div>
+                    <p class="small fw-semibold mb-0">
+                      IT Technician (Volunteer)
+                    </p>
+                    <p class="small text-muted mb-0">
+                      Calgary Drop-In &amp; Rehab Centre · Calgary, AB
+                    </p>
+                  </div>
+                  <p class="small text-muted mb-0 mt-1 mt-md-0">
+                    Nov 2025 – Present
+                  </p>
+                </div>
+                <ul class="small mt-2 lp-list-bullets ps-3">
+                  <li>
+                    Sanitized drives on donated PCs per standard; logged wipe
+                    ID/serial/pass-fail and prepped systems for redeployment.
+                  </li>
+                  <li>
+                    Deployed Windows (standard image), created/activated
+                    local/admin account, and applied Windows Update and vendor
+                    drivers.
+                  </li>
+                  <li>
+                    Updated BIOS/firmware; enforced UEFI/TPM/Secure Boot, set
+                    boot order, and validated hardware health (SMART, memory,
+                    thermals).
+                  </li>
+                  <li>
+                    Ran functional QA (NIC link, display, USB, HID);
+                    documented faults and routed to repair; completed asset
+                    intake/inventory (serial/spec/BIOS/OS build) and
+                    labeled/packaged for distribution.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Job 2 -->
+              <div class="mb-3">
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                  <div>
+                    <p class="small fw-semibold mb-0">
+                      Tech Specialist &amp; Customer Service
+                    </p>
+                    <p class="small text-muted mb-0">
+                      Bombay Spices Grocery Store · Calgary, AB
+                    </p>
+                  </div>
+                  <p class="small text-muted mb-0 mt-1 mt-md-0">
+                    Aug 2024 – Present
+                  </p>
+                </div>
+                <ul class="small mt-2 lp-list-bullets ps-3">
+                  <li>
+                    Operate and troubleshoot POS systems, Windows 10/11
+                    devices, and M365 applications. Manage customer profiles
+                    in the Bombay Points app, including point transfers and
+                    account updates.
+                  </li>
+                  <li>
+                    Process refunds and special orders through internal
+                    systems, ensuring accuracy and compliance. Support
+                    inventory control, stock ordering, and weekend deliveries.
+                    Resolve customer inquiries in-store and by phone.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Projects -->
+          <section id="projects" class="lp-card p-3 p-md-4 mb-3">
+            <h2 class="lp-section-title mb-0">Projects</h2>
+
+            <div class="mt-3">
+              <!-- Project 1 -->
+              <article class="border rounded-3 p-3 mb-2 bg-light">
+                <p class="small fw-semibold mb-0">
+                  IT Support Simulation Lab
+                </p>
+                <p class="small text-muted mb-1">Personal Lab · IT Support</p>
+                <p class="small mb-1">
+                  Configured a fully functional IT helpdesk simulation using
+                  osTicket in a virtualized lab environment. Built and managed
+                  the environment to replicate real-world IT support
+                  workflows, showcasing networking, Linux administration, and
+                  ticketing system management.
+                </p>
+                <div>
+                  <span class="lp-chip">Windows 11</span>
+                  <span class="lp-chip">Active Directory</span>
+                  <span class="lp-chip">Ticketing</span>
+                </div>
+              </article>
+
+              <!-- Project 2 -->
+              <article class="border rounded-3 p-3 mb-2 bg-light">
+                <p class="small fw-semibold mb-0">
+                  Blue Team Mimikatz Detection
+                </p>
+                <p class="small text-muted mb-1">
+                  Security Lab · Blue Team
+                </p>
+                <p class="small mb-1">
+                  I built this lab to simulate how a Blue Team can detect a
+                  credential dumping attack using Sysmon and Splunk. I ran a
+                  real Mimikatz attack inside a Windows 10 VM and created a
+                  Splunk alert to catch it.
+                </p>
+                <div>
+                  <span class="lp-chip">Windows Logs</span>
+                  <span class="lp-chip">Sysmon</span>
+                  <span class="lp-chip">Security</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Education -->
+          <section id="education" class="lp-card p-3 p-md-4 mb-3">
+            <h2 class="lp-section-title mb-0">Education</h2>
+
+            <div class="mt-3">
+              <!-- SAIT #1 -->
+              <div class="mb-3 d-flex align-items-start">
+                <img src="assets/images/sait.jpg" alt="SAIT logo" class="lp-edu-logo me-2" />
+                <div>
+                  <p class="small fw-semibold mb-0">
+                    Southern Alberta Institute of Technology (SAIT)
+                  </p>
+                  <p class="small mb-0">
+                    Diploma – Management and Leadership · GPA 3.65 / 4.0
+                  </p>
+                  <p class="small text-muted mb-0">Jan 2025 – Aug 2025</p>
+                </div>
+              </div>
+
+              <!-- SAIT #2 -->
+              <div class="mb-3 d-flex align-items-start">
+                <img src="assets/images/sait.jpg" alt="SAIT logo" class="lp-edu-logo me-2" />
+                <div>
+                  <p class="small fw-semibold mb-0">
+                    Southern Alberta Institute of Technology (SAIT)
+                  </p>
+                  <p class="small mb-0">
+                    Post-Diploma – Cybersecurity for Control Systems · GPA
+                    3.95 / 4.0
+                  </p>
+                  <p class="small text-muted mb-0">Jan 2024 – Aug 2024</p>
+                </div>
+              </div>
+
+              <!-- SPU -->
+              <div class="mb-2 d-flex align-items-start">
+                <img src="assets/images/spu.png" alt="Sardar Patel University logo" class="lp-edu-logo me-2" />
+                <div>
+                  <p class="small fw-semibold mb-0">
+                    Sardar Patel University
+                  </p>
+                  <p class="small mb-0">
+                    Bachelor of Computer Applications · GPA 8 / 10
+                  </p>
+                  <p class="small text-muted mb-0">May 2020 – May 2023</p>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
 
-    
-      </div>
-    </div>
-  </div>
+        <!-- ========================
+               Right column
+               ======================== -->
+        <div class="col-lg-4">
+          <!-- Skills -->
+          <section class="lp-card p-3 p-md-4 mb-3">
+            <h2 class="lp-section-title mb-2">Skills &amp; Tech Stack</h2>
 
-  <!-- ===== PERSONAL PROJECTS (Tree View) ===== -->
- <div class="ds-experience-section">
-  <div class="container">
-    <h2 class="ds-heading">Personal Projects 📃</h2>
-    <div class="row ds-experience-list">
+            <div class="small mb-2">
+              <p class="fw-semibold mb-1">Operating Systems</p>
+              <p class="mb-0">Windows 10/11 · Basic Linux</p>
+            </div>
 
-      <!-- LEFT COLUMN -->
-      <div class="col-md-6">
+            <div class="small mb-2">
+              <p class="fw-semibold mb-1">Support &amp; Collaboration</p>
+              <p class="mb-0">ServiceNow · Jira · Microsoft 365 · Teams</p>
+            </div>
 
-        <section class="ds-tree-card">
-          <h6>📁 Network Security Projects</h6>
-          <ul class="ds-tree-projects">
-            <li>└── <a class="ds-tree-link" href="https://kishxnpatel.com/it-support-simulation-lab" target="_blank" rel="noopener">IT Support Simulation Lab </a></li>
-            <li>└── <a class="ds-tree-link" href="https://kishxnpatel.com/blue-team-mimikatz-detection" target="_blank" rel="noopener">Blue Team Mimikatz Detection </a></li>
-          </ul>
-        </section>
+            <div class="small mb-2">
+              <p class="fw-semibold mb-1">Identity &amp; Access</p>
+              <p class="mb-0">Active Directory · Users &amp; Groups</p>
+            </div>
 
-        <section class="ds-tree-card">
-          <h6>📁 AI & Chatbots</h6>
-          <ul class="ds-tree-projects">
-            <li>└── <a class="ds-tree-link" href="https://kishxnpatel.com/chatbot" target="_blank" rel="noopener">Identity Management Chatbot (ChatGPT + Pytorch) </a></li>
-          </ul>
-        </section>
+            <div class="small mb-2">
+              <p class="fw-semibold mb-1">Networking</p>
+              <p class="mb-0">VLANs · DHCP · DNS · Port checks</p>
+            </div>
 
-        <section class="ds-tree-card">
-          <h6>📁 Games & Fun</h6>
-          <ul class="ds-tree-projects">
-            <li>└── <a class="ds-tree-link" href="https://kishxnpatel.com/SkyFly" target="_blank" rel="noopener">SkyFly – JavaScript Canvas Game </a></li>
-            <li>└── <a class="ds-tree-link" href="https://kishxnpatel.com/Tic-Tac-Toe.game" target="_blank" rel="noopener">Tic-Tac-Toe – Android Game</a></li>
-          </ul>
-        </section>
+            <div class="small mb-0">
+              <p class="fw-semibold mb-1">Scripting &amp; Automation</p>
+              <p class="mb-0">PowerShell · Python (basic)</p>
+            </div>
+          </section>
 
-      </div>
+          <!-- Tools / Security -->
+          <section class="lp-card p-3 p-md-4 mb-3">
+            <h2 class="lp-section-title mb-2">Tools &amp; Security</h2>
+            <ul class="small lp-list-bullets ps-3 mb-0">
+              <li>Wireshark · Nmap</li>
+              <li>Basic endpoint security &amp; patching</li>
+              <li>Documentation &amp; KB writing</li>
+            </ul>
+          </section>
 
-      <!-- RIGHT COLUMN -->
-      <div class="col-md-6">
+          <!-- Contact -->
+          <section id="contact" class="lp-card p-3 p-md-4 mb-3">
+            <h2 class="lp-section-title mb-2">Contact</h2>
 
-        <section class="ds-tree-card">
-          <h6>📁 Full-Stack & DevOps</h6>
-          <ul class="ds-tree-projects">
-            <li>└── <a class="ds-tree-link" href="https://kishxnpatel.com/secure-devops-dashboard" target="_blank" rel="noopener">Secure DevOps Dashboard (Vue.js + Express + JWT) </a></li>
-            <li>└── <a class="ds-tree-link" href="https://kishxnpatel.com/vuetify-project" target="_blank" rel="noopener">Vuetify Project (Vue.js UI Components) </a></li>
-          </ul>
-        </section>
+            <div class="small mb-2">
+              <p class="mb-1 fw-semibold">Email</p>
+              <a href="mailto:Kishnptll@gmail.com" class="text-decoration-none">Kishnptll@gmail.com</a>
+            </div>
 
-        <section class="ds-tree-card">
-          <h6>📁 Apps & Hackathons</h6>
-          <ul class="ds-tree-projects">
-            <li>└── <a class="ds-tree-link" href="https://kishxnpatel.com/Rescue-Application" target="_blank" rel="noopener">Rescue Application (Flutter + Kotlin)</a></li>
-            <li>└── <a class="ds-tree-link" href="https://kishxnpatel.com/InternetS-of-Energy" target="_blank" rel="noopener">InternetS-of-Energy (Python + JS)</a></li>
-          </ul>
-        </section>
+            <div class="small mb-2">
+              <p class="mb-1 fw-semibold">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/kishnpatel" target="_blank"
+                class="text-decoration-none">linkedin.com/in/kishnpatel</a>
+            </div>
 
-        <section class="ds-tree-card">
-          <h6>📁 Miscellaneous</h6>
-          <ul class="ds-tree-projects">
-            <li>└── <a class="ds-tree-link" href="https://kishxnpatel.com/kishxnpatel.github.io" target="_blank" rel="noopener">Portfolio Website (This Site)</a></li>
-          
-          </ul>
-        </section>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-  <!-- ===== EDUCATION ===== -->
-<div class="ds-edu-section">
-    <div class="container">
-            <h2 class="ds-heading">Education 📚</h2>
-            <div class="col-md-5">
-            <section>
-              <p class="ds-curt">January 2025 - August 2025 🧑🏻‍🎓</p>
-              <p class="ds-cllg">Diploma in Management and Leadership (3.65/4 GPA)</p>
-              <p class="ds-clglink">» <a href="https://www.sait.ca" target="_blank" rel="noopener noreferrer">Southern
-                  Alberta Institute of Technology</a> 🇨🇦</p>
-            </section>
-            <section>
-              <p class="ds-curt">January 2024 - August 2024 🧑🏻‍🎓</p>
-              <p class="ds-cllg">Post-Graduation in Cybersecurity For Control System (3.95/4 GPA)</p>
-              <p class="ds-clglink">» <a href="https://www.sait.ca" target="_blank" rel="noopener noreferrer">Southern
-                  Alberta Institute of Technology</a> 🇨🇦</p>
-            </section>
-            <section>
-              <p class="ds-curt">May 2020 - May 2023 🧑🏻‍🎓</p>
-              <p class="ds-cllg">Bachelor's In Computer Application (8/10 GPA)</p>
-              <p class="ds-clglink">» <a href="https://www.spuvvn.edu/" target="_blank"
-                  rel="noopener noreferrer">Sardar Patel University</a> 🇮🇳</p>
-            </section>
-          </div>
-          </div>
-        </div>
-
-  <!-- ===== SKILLS ===== 
-  <div class="ds-skills-section">
-    <div class="container">
-        <h2 class="ds-heading">Skills 📃</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="ds-heading">Core Programming & Scripting 🌟</h2>
-          <ul class="ds-skills-list">
-            <li>Python</li>
-            <li>Javascript</li>
-            <li>Typescript</li>
-            <li>Bash/Shell</li>
-            <li>PowerShell</li>
-            <li>SQL</li>
-            <li>Oracle Database</li>
-            <li>Sybase Database</li>
-          </ul>
-          <h2 class="ds-heading">IT Support & Infrastructure Tools ⚡</h2>
-          <ul class="ds-skills-list">
-            <li>Windows 10/11</li>
-            <li>Microsoft Office 365</li>
-            <li>VMware ESXi</li>
-            <li>Active Directory</li>
-            <li>Jira Service Desk</li>
-            <li>Device Imaging</li>
-            <li>Endpoint Troubleshooting</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h2 class="ds-heading">Cybersecurity Tools & Platforms 🔐</h2>
-          <ul class="ds-skills-list">
-            <li>Wireshark</li>
-            <li>Nmap</li>
-            <li>Metasploit</li>
-            <li>Snort</li>
-            <li>OpenVAS</li>
-            <li>Kali Linux</li>
-            <li>ISO/IEC 27001</li>
-            <li>NIST CSF</li>
-            <li>Firewall Setup / IDS/IPS</li>
-            <li>VPN / DNSSEC</li>
-          </ul>
-          <h2 class="ds-heading">Cloud & DevOps ☁️</h2>
-          <ul class="ds-skills-list">
-            <li>Google Cloud (BigQuery Data, Compute Engine)</li>
-            <li>Cloud Access Security Broker (CASB)</li>
-            <li>Docker</li>
-            <li>Github Actions (CI/CD)</li>
-          </ul>
+            <div class="small mb-0">
+              <p class="mb-1 fw-semibold">Website</p>
+              <a href="https://kishxnpatel.com" target="_blank" class="text-decoration-none">kishxnpatel.com</a>
+            </div>
+          </section>
         </div>
       </div>
     </div>
-  </div> -->
+  </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="ds-footer text-center">
-    <div class="container">
-      <section>
-        <p>Want to talk?</p>
-        <a href="mailto:kishnptll@gmail.com" class="mail">Let's Mail it <i class="ri-mail-send-line"></i></a>
-      </section>
-      
-    </div>
-  </footer>
+  <!-- ========================
+         Scripts
+         ======================== -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Smooth scroll JS (for fixed navbar offset) -->
+  <script>
+    document
+      .querySelectorAll('.nav-link[href^="#"]')
+      .forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href").substring(1);
+          const targetEl = document.getElementById(targetId);
+          if (!targetEl) return;
+
+          const offset = 70; // adjust if navbar height changes
+
+          const y =
+            targetEl.getBoundingClientRect().top +
+            window.pageYOffset -
+            offset;
+
+          window.scrollTo({
+            top: y,
+            behavior: "smooth",
+          });
+        });
+      });
+  </script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="assets/js/main.js"></script>
 
 </html>

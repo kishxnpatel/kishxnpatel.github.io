@@ -1,437 +1,249 @@
+/* ===========================
+   Global tokens & behavior
+   =========================== */
+
+/* Base colors + tokens */
+:root {
+    --lp-bg: #f3f2ef;
+    --lp-card-bg: #ffffff;
+    --lp-border: #dcdcdc;
+    --lp-primary: #0a66c2;
+}
+
+/* Smooth scroll for anchor links */
 html {
     scroll-behavior: smooth;
 }
 
+/* Page background, font, fixed-navbar spacing, disable selection */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    overflow-x: hidden;
-    font-style: normal;
-    letter-spacing: 0.5px;
-    font-display: optional;
-    background-color: #F4F2EE;
-	margin-top: 70px;
-}
-
-.prevent-select {
+    background-color: var(--lp-bg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    padding-top: 64px;
+    /* space for fixed navbar on desktop */
     -webkit-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
-a,
-a:hover,
-a:focus,
-i,
-input,
-button,
-input:focus,
-.transition {
-    text-decoration: none;
-    outline: none;
-    transition: all 0.4s ease;
-    box-shadow: none;
+/* Wider layout on large screens */
+@media (min-width: 1200px) {
+    .container-xl {
+        max-width: 1220px;
+    }
 }
 
-a {
-    color: #090909;
+
+/* ===========================
+   Navbar
+   =========================== */
+
+.lp-navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
 }
 
-img {
-    max-width: 100%;
-    border: none;
-    outline: none;
-    height: auto;
+
+/* ===========================
+   Cards & generic elements
+   =========================== */
+
+.lp-card {
+    background-color: var(--lp-card-bg);
+    border: 1px solid var(--lp-border);
+    border-radius: 0.75rem;
 }
 
-ul {
-    padding: 0;
-    margin: 0;
+/* Section titles */
+.lp-section-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #6c757d;
+    font-weight: 600;
 }
 
-/*-----------------------------------------------------------------
-  1. >>> HEADER STYLE
-----------------------------------------------------------------*/
-
-
-.ds-header {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: auto;
-	z-index: 5;
-	padding: 12px;
-	transition-delay: 0s;
-	transition-duration: 0.3s;
-	transition-property: all;
-	transition-timing-function: ease;
-    
+/* List spacing */
+.lp-list-bullets li {
+    margin-bottom: 0.25rem;
 }
 
-.ds-header.ds-fixed-header {
-	padding: 10px;
-	box-shadow: 0px 0px 10px #373737;
-	background-color: #ffffffb6;
+/* Small skill chips */
+.lp-chip {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 999px;
+    background-color: #dbedff;
+    font-size: 0.7rem;
+    margin: 0 0.25rem 0.25rem 0;
+    border: 1px solid #0a66c2;
 }
 
-.ds-header-inner {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+/* ===========================
+   Profile hero (banner + avatar)
+   =========================== */
+
+.lp-profile-card {
+    padding-top: 0;
 }
 
-.ds-social {
-    list-style: none;
-    display: flex;
+/* Banner behind avatar */
+.lp-profile-banner {
+    height: 170px;
+    border-radius: 0.75rem 0.75rem 0 0;
+    background-image: url("../images/Calgary_banner_Panorama.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Circular avatar using your photo */
+.lp-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-image: url("../images/patell.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #d8d8d8;
+    /* fallback */
+    border: 5px solid #ffffff;
+    /* white ring */
+}
+
+/* Avatar overlap on banner */
+.lp-profile-avatar-wrap {
+    margin-top: -50px;
+}
+
+/* Small pill badge (Open to work) */
+.lp-tag-pill {
+    display: inline-flex;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.ds-social li {
-    margin-left: 5px;
-}
-
-.ds-social li:first-child {
-    margin-left: 0;
-}
-.ds-social li a {
     border-radius: 9px;
-    color: #FFF;
-    width: auto;
-    height: 33px;
-    background-color: #090909;
-    display: flex;
-    padding: 8px;
-    justify-content: center;
+    padding: 0.15rem 0.7rem;
+    font-size: 0.75rem;
+    border: 2px solid #ccd6dd;
+    background-color: #eaf3ff;
+    color: #1d3b5a;
+}
+
+
+/* ===========================
+   Social links
+   =========================== */
+
+.lp-social-icon {
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+.lp-social-icon-link {
+    display: inline-flex;
     align-items: center;
-    text-align: center;
-    font-size: 14px;
-    border: 2px solid #000000;
 }
 
-.ds-social li a:hover {
-    border: #000 solid 2px;
-    color: #FFF;
+.lp-social-icon-link:hover img {
+    opacity: 0.8;
 }
 
-.ds-social li .link {
-    background-color: rgb(107, 148, 214); /* LinkedIn original */
-    border: 1px solid black;
+/* Portfolio text link beside icons */
+.lp-social-text-link {
+    text-decoration: none;
 }
 
-.ds-social li .insta {
-    background-color: rgb(237, 104, 104); /* Instagram original */
-    border: 1px solid black;
-}
-
-
-.ds-social li .GitHub {
-	background-color: rgb(0, 0, 0); /* GitHub original */
-	border: 1px solid black;
-}
-/*-----------------------------------------------------------------
-  2. >>> BANNER STYLE
-----------------------------------------------------------------*/
-
-.ds-banner .row {
-  align-items: center;
-}
-.ds-banner .col-md-4 {
-  display: flex;
-  justify-content: right;  
-}
-.ds-banner .col-md-8 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;   /
-}
-
-.profile-gradient-wrapper {
-  margin: 0;                 
-  padding: 0;
-  line-height: 0;
-}
-.my {
-  display: block;
-  border-radius: 20px;
-  border: 2px solid #a3a3a3;
-  width: clamp(140px, 18vw, 220px);   /* responsive avatar size */
-  height: auto;
-  object-fit: cover;
-}
-
-
-.ds-banner section h1 {
-  margin: 0 0 8px 0;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 1;
-  color: #111;
-}
-.ds-banner section h1 strong {
-  font-weight: 800;
-}
-
-.ds-banner section .headline {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #060606;  
-  max-width: 69ch; 
-}
-
-.ds-banner {
-  padding-top: 24px;   
-  padding-bottom: 40px;
-}
-.ds-banner section {
-  padding: 0;         
-}
-/*-----------------------------------------------------------------
-  3. >>> ABOUT STYLE
-----------------------------------------------------------------*/
-
-.ds-about-section {
-    margin-bottom: 30px;
-}
-
-.ds-about-section section {
-    border-radius: 12px;
-    padding: 9px 15px;
-    color: #373737;
-    line-height: 26px;
-    background-color: #ffffff;
-    border: 1.5px solid #cecece;
-    margin-bottom: 20px;
-}
-
-.ds-heading {
-    display: inline-block;
-    font-weight: 700;
-    color: #090909;
-    letter-spacing: 1px;
-    font-size: 18px;
-    border-bottom: 4px solid #5161a1;
-    padding-bottom: 6px;
-    margin-bottom: 16px;
-}
-
-.ds-about-section p {
-    color: #303030;
-    font-size: 17px;
-    font-weight: 400;
-}
-
-/*-----------------------------------------------------------------
-  4. >>> EDUCATION
-----------------------------------------------------------------*/
-
-.ds-edu-section {
-    margin-bottom: 30px;
-}
-
-.ds-edu-section section {
-    border-radius: 12px;
-    padding: 14px;
-    color: #373737;
-    font-weight: 500;
-    background-color: #fafafa;
-    border: 1.5px solid #cecece;
-    margin: 10px;
-}
-
-.ds-edu-section .ds-curt {
-    color: green;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.ds-edu-section .ds-cllg {
-    color: #373737;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.ds-edu-section .ds-clglink a {
-    color: #af1a1a;
-    font-weight: 600;
-}
-
-/*-----------------------------------------------------------------
-  5. >>> SKILLS
-----------------------------------------------------------------*/
-
-.ds-skills-section {
-    margin-bottom: 30px;
-}
-
-.ds-skills-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 11px;
-}
-
-.ds-skills-list li {
-    display: inline-block;
-    color: #090909;
-    font-size: 16px;
-    padding: 8px;
-    border-radius: 10px;
-    margin-right: 14px;
-    margin-bottom: 12px;
-    font-weight: 700;
-    background-color: #ffffff;
-    border: solid 1.5px #cecece;
-}
-
-/*-----------------------------------------------------------------
-  6. >>> PERSONAL PROJECTS (TREE VIEW)
-----------------------------------------------------------------*/
-
-.ds-experience-section {
-    margin-bottom: 30px;
-}
-
-.ds-tree-card {
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #fafafa;
-    border: 1px solid #000000;
-    margin-bottom: 14px;
-}
-
-.ds-tree-projects {
-    list-style: none;
-    padding-left: 12px;
-    margin-top: 5px;
-}
-
-.ds-tree-projects li {
-    font-size: 16px;
-    font-weight: 600;
-    color: #373737;
-    margin-bottom: 5px;
-}
-
-.ds-tree-link {
-    color: #2a5db0;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.ds-tree-link:hover {
+.lp-social-text-link:hover {
     text-decoration: underline;
 }
 
-/*-----------------------------------------------------------------
-  7. >>> FOOTER
-----------------------------------------------------------------*/
 
-.ds-footer {
-    padding: 40px;
-    border-top: 1px solid #373737;
-    text-align: center;
-    background-color: #fbfbfb;
+/* ===========================
+   Education logos
+   =========================== */
+
+.lp-edu-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    border-radius: 1px;
 }
 
-.ds-footer section p {
-    color: #090909;
-    font-size: 29px;
-    font-weight: bold;
+
+/* ===========================
+   Hamburger menu icon
+   =========================== */
+
+.lp-hamburger-btn {
+    border: none;
+    padding: 0.25rem 0.35rem;
 }
 
-.mail {
-    color: #FFF;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    background-color: #544f83;
-    padding: 15px;
-    border: 2px solid #2d2d2d;
-    border-radius: 10px;
+/* Lines inside hamburger */
+.lp-hamburger-line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #222;
+    border-radius: 999px;
+    position: relative;
+    transition:
+        transform 0.25s ease-out,
+        opacity 0.2s ease-out,
+        top 0.25s ease-out;
 }
 
-.mail:hover {
-    background-color: #4e4882;
-    color: #FFF;
-    box-shadow: 0px 0px 7px #090909;
+/* Spacing between lines */
+.lp-hamburger-line+.lp-hamburger-line {
+    margin-top: 4px;
 }
 
-/*-----------------------------------------------------------------
-  8. >>> RESPONSIVE
-----------------------------------------------------------------*/
+/* When menu is open (Bootstrap removes .collapsed) */
+.lp-hamburger-btn:not(.collapsed) .line-1 {
+    transform: rotate(45deg);
+    top: 6px;
+}
 
-@media (max-width: 768px) {
-    .profile-gradient-wrapper {
-        position: relative;
-        width: 190px;  /* slightly bigger to show gradient ring */
-        height: 190px;
-        margin: 0 auto 15px auto; 
-        border-radius: 15%;
-        background: linear-gradient(135deg, #000000 10%, #eeeeee 80%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px; /* thickness of gradient ring */
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+.lp-hamburger-btn:not(.collapsed) .line-2 {
+    opacity: 0;
+}
+
+.lp-hamburger-btn:not(.collapsed) .line-3 {
+    transform: rotate(-45deg);
+    top: -6px;
+}
+
+
+/* ===========================
+   Responsive tweaks
+   =========================== */
+
+/* Mobile: navbar collapse animation + avatar spacing */
+@media (max-width: 767.98px) {
+    body {
+        padding-top: 56px;
+        /* space for fixed navbar on mobile */
     }
 
-    .profile-gradient-wrapper img.my {
-        width: 180px;
-        height: 180px;
-        border-radius: 15%;
-        object-fit: cover;
-        border: 2px solid #fff; /* white border inside gradient */
+    .navbar-collapse.collapsing,
+    .navbar-collapse.collapsing.show {
+        transition: height 0.45s ease-out;
     }
 
-    .ds-header {
-        padding: 17px;
+    .lp-avatar {
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* Small phones: taller banner + stronger avatar overlap */
+@media (max-width: 575.98px) {
+    .lp-profile-banner {
+        height: 230px;
     }
 
-    figure {
-        padding: 0; 
-        margin: 0 auto 15px auto;
-        text-align: center;
-    }
-
-    .ds-banner {
-        text-align: center;
-        padding: 20px 10px !important;
-        background: #f4f2ee; 
-        margin-top: 70px;
-    }
-
-    .ds-banner section {
-        padding: 0 10px;
-    }
-
-    .ds-banner section h1 {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 26px;
-        color: #000;
-        margin-top: 10px;
-    }
-
-    .ds-banner section h1 span {
-        display: block;
-        font-size: 14px;
-        color: #666;
-        margin-bottom: 5px;
-    }
-
-    .ds-skills-section .col-12,
-    .ds-experience-list .col-12,
-    .ds-edu-section .col-12 {
-        margin-bottom: 40px;
-    }
-
-    .ds-footer {
-        padding: 60px 10px;
-    }
-
-    .mail {
-        padding: 10px;
-        font-size: 14px;
+    .lp-profile-avatar-wrap {
+        margin-top: -100px;
     }
 }
