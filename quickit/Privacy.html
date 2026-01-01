@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Privacy Policy for Quick Toolkit Chrome Extension" />
+  <title>Quick Toolkit - Privacy Policy</title>
+
+  
+  <style>
+   :root{
+ 
+  --bg:#f3f4f6;            /* page background (light gray) */
+  --card:#ffffff;          /* card background */
+  --border:#e5e7eb;        /* subtle border */
+  --text:#111827;          /* main text */
+  --muted:#4b5563;         /* secondary text */
+  --accent:#0a66c2;        /* your main blue accent (LinkedIn-ish) */
+  --accent2:#2563eb;       /* optional secondary blue */
+  --link:#0a66c2;
+  --shadow: 0 10px 25px rgba(17,24,39,.08);
+  --radius: 16px;
+}
+
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans";
+  background: linear-gradient(180deg, #f7f7f7, var(--bg));
+  color: var(--text);
+  line-height: 1.55;
+}
+
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 16px 64px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .brand{
+      display:flex;
+      flex-direction:column;
+      gap: 2px;
+    }
+    .brand h1{
+      margin:0;
+      font-size: 26px;
+      letter-spacing: .2px;
+    }
+    .brand p{
+      margin:0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      color: var(--text);
+      text-decoration:none;
+      transition: transform .08s ease, border-color .12s ease, background .12s ease;
+      white-space: nowrap;
+    }
+    .btn:hover{
+      border-color: rgba(138,180,248,.55);
+      background: rgba(138,180,248,.08);
+    }
+    .btn:active{ transform: translateY(1px); }
+    .btn .arrow{ font-size: 18px; line-height: 1; }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+
+    .cardTop{
+      padding: 18px 18px 12px;
+      border-bottom: 1px solid var(--border);
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(138,180,248,.35);
+      color: var(--accent);
+      background: rgba(138,180,248,.08);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .content{
+      padding: 18px;
+    }
+
+    h2{
+      margin: 18px 0 8px;
+      font-size: 18px;
+    }
+    h3{
+      margin: 14px 0 8px;
+      font-size: 16px;
+      color: var(--text);
+    }
+
+    p{ margin: 0 0 10px; color: var(--text); }
+    .muted{ color: var(--muted); }
+
+    ul{
+      margin: 8px 0 14px;
+      padding-left: 18px;
+      color: var(--text);
+    }
+    li{ margin: 6px 0; }
+
+    code{
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.08);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.95em;
+    }
+
+    a{
+      color: var(--link);
+      text-decoration: none;
+    }
+    a:hover{ text-decoration: underline; }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 8px;
+    }
+
+    .note{
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      border-radius: 14px;
+      padding: 14px;
+    }
+
+    .kvs{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin: 10px 0 2px;
+    }
+
+    .kv{
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.18);
+      border-radius: 12px;
+      padding: 12px;
+    }
+
+    .kv b{
+      display:block;
+      margin-bottom: 4px;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+
+    footer{
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      display:flex;
+      flex-wrap:wrap;
+      gap: 10px;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    @media (min-width: 860px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+      .kvs{ grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>Quick Toolkit</h1>
+        <p>Privacy Policy (Chrome Extension)</p>
+      </div>
+
+      <!-- Back button tohomepage -->
+      <a class="btn" href="/quickit/index.html" rel="noopener">
+        <span class="arrow">←</span>
+        Back to /quickIT.com
+      </a>
+    </header>
+
+    <section class="card">
+      <div class="cardTop">
+        <div class="pill">Privacy-first • no accounts • no tracking</div>
+        <div class="muted">Effective date: <b style="color:var(--text)">January 1, 2026</b></div>
+      </div>
+
+      <div class="content">
+        <p>
+          Quick Toolkit is a lightweight Chrome extension that provides (1) developer reference links and
+          (2) an IT support ticket note builder with a copy-to-clipboard action.
+          The extension is designed to be <b>privacy-first</b> and does <b>not</b> require accounts.
+        </p>
+
+        <div class="grid">
+          <div class="note">
+            <h2>Summary</h2>
+            <ul>
+              <li><b>No tracking.</b> No analytics. No ads.</li>
+              <li><b>No personal data collection.</b></li>
+              <li>Some preferences may be saved <b>locally</b> in your browser for convenience.</li>
+              <li>Clipboard copy happens only when you click <b>Copy</b>.</li>
+            </ul>
+          </div>
+
+          <div class="note">
+            <h2>What we do not collect</h2>
+            <ul>
+              <li>Browsing history</li>
+              <li>Keystrokes / mouse tracking</li>
+              <li>Passwords or authentication data</li>
+              <li>Personal identifiers (name, email, address)</li>
+              <li>Payments or financial information</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>Data We Collect</h2>
+        <p>
+          Quick Toolkit does <b>not</b> collect personal data such as your name, email, browsing history, or web activity.
+        </p>
+
+        <h3>Local storage (on your device only)</h3>
+        <p class="muted">
+          The extension may store small UI preferences locally using Chrome’s <code>storage</code> API to improve usability.
+        </p>
+
+        <div class="kvs">
+          <div class="kv">
+            <b>Examples</b>
+            Last selected tab (Developer / IT Support), selected issue type (optional convenience)
+          </div>
+          <div class="kv">
+            <b>Where it goes</b>
+            Stored locally in your browser (not sent to any server)
+          </div>
+        </div>
+
+        <h3>Clipboard</h3>
+        <p>
+          When you click the <b>Copy</b> button, the extension writes the generated note to your clipboard so you can paste it
+          into your ticketing system. The extension does <b>not</b> read your clipboard and does not transmit copied content.
+        </p>
+
+        <h2>Permissions Explained</h2>
+        <ul>
+          <li>
+            <b><code>storage</code></b> — used to save small UI preferences locally (example: active tab, issue type).
+          </li>
+          <li>
+            <b><code>clipboardWrite</code></b> — used only when you click <b>Copy</b> to place generated text into your clipboard.
+          </li>
+        </ul>
+
+        <h2>External Links & Third-Party Websites</h2>
+        <p>
+          The extension includes buttons that open third-party websites (for example: MDN, GitHub, Stack Overflow).
+          When you click a link, your browsing is subject to that website’s privacy policy. Quick Toolkit does not control those sites.
+        </p>
+
+        <h2>External Assets (Icon Fonts)</h2>
+        <p>
+          If the extension loads an external icon font stylesheet (for example, Remix Icon via a CDN),
+          your browser may make a request to download those files. That request may include standard technical data
+          (such as IP address and user agent) as part of normal web traffic. Quick Toolkit does not receive or store this data.
+        </p>
+        <p class="muted">
+          If icons are bundled locally inside the extension package, no external requests are made for icons.
+        </p>
+
+        <h2>Data Sharing</h2>
+        <ul>
+          <li>We do <b>not</b> sell, rent, or share user data with third parties.</li>
+          <li>We do <b>not</b> use data for advertising or profiling.</li>
+        </ul>
+
+        <h2>Data Retention</h2>
+        <p>
+          Any preferences stored via Chrome extension storage remain on your device until you clear the extension’s data or uninstall the extension.
+          Uninstalling the extension removes its locally stored data.
+        </p>
+
+        <h2>Children’s Privacy</h2>
+        <p>
+          Quick Toolkit is not directed to children under 13 and does not knowingly collect personal information from children.
+        </p>
+
+        <h2>Changes to This Policy</h2>
+        <p>
+          We may update this policy to reflect changes in the extension. The “Effective date” will be updated when changes are made.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          For questions about this privacy policy, visit:
+          <a href="https://kishxnpatel.com/" rel="noopener">https://kishxnpatel.com/</a>
+        </p>
+
+        <footer>
+          <span>© 2026 Kishan Patel • Quick Toolkit</span>
+          <span>
+            Main page:
+            <a href="https://kishxnpatel.com/quickit/" rel="noopener">/quickit/</a>
+            &nbsp;•&nbsp;
+            Privacy:
+            <a href="https://kishxnpatel.com/quickit/privacy/" rel="noopener">/quickit/privacy/</a>
+          </span>
+        </footer>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
