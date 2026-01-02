@@ -20,7 +20,7 @@ body {
     background-color: var(--lp-bg);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         sans-serif;
-    padding-top: 64px;
+    padding-top: 40px;
     /* space for fixed navbar on desktop */
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -73,11 +73,12 @@ body {
 /* Small skill chips */
 .lp-chip {
     display: inline-block;
-    padding: 0.2rem 0.5rem;
-    border-radius: 999px;
+    padding: 0.2rem 0.3rem;
+    border-radius: 9px;
     background-color: #dbedff;
-    font-size: 0.7rem;
-    margin: 0 0.25rem 0.25rem 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0 0.20rem 0.2rem 0;
     border: 1px solid #0a66c2;
 }
 
