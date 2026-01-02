@@ -14,6 +14,16 @@
 html {
     scroll-behavior: smooth;
 }
+#projects.lp-card{
+  width: 100%;
+}
+
+@media (min-width: 992px){
+  #projects.lp-card{
+    max-width: none;
+  }
+}
+
 
 /* Page background, font, fixed-navbar spacing, disable selection */
 body {
@@ -49,7 +59,15 @@ body {
 /* ===========================
    Cards & generic elements
    =========================== */
-
+#projects article.border{
+    border: 1.5px solid #adadad !important;
+  
+}
+#projects a.btn{
+    background-color: #343d81 !important;
+    
+}
+   
 .lp-card {
     background-color: var(--lp-card-bg);
     border: 1px solid var(--lp-border);
