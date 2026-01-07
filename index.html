@@ -1,570 +1,715 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GDKGHVT0BM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GDKGHVT0BM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "G-GDKGHVT0BM");
+    </script>
+    <meta charset="utf-8" />
+    <title>Kishan Patel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  gtag('config', 'G-GDKGHVT0BM');
-</script>
-  <meta charset="utf-8" />
-  <title>Kishan Patel</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="assets/css/main.css" />
-</head>
-
-<body>
-  <!-- ========================
+  <body>
+    <!-- ========================
          Navbar
          ======================== -->
-  <nav class="navbar navbar-expand-md lp-navbar fixed-top">
-    <div class="container-xl">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-        <span class="fw-semibold small">Kishan Patel</span>
-      </a>
+    <nav class="navbar navbar-expand-md lp-navbar fixed-top">
+      <div class="container-xl">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <span class="fw-semibold small">Kishan Patel</span>
+        </a>
 
+        <button
+          class="navbar-toggler lp-hamburger-btn collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="lp-hamburger-line line-1"></span>
+          <span class="lp-hamburger-line line-2"></span>
+          <span class="lp-hamburger-line line-3"></span>
+        </button>
 
-      <button class="navbar-toggler lp-hamburger-btn collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="lp-hamburger-line line-1"></span>
-        <span class="lp-hamburger-line line-2"></span>
-        <span class="lp-hamburger-line line-3"></span>
-      </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0 small">
+            <li class="nav-item">
+              <a class="nav-link" href="#profile">Profile</a>
+            </li>
 
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-md-0 small">
-          <li class="nav-item">
-            <a class="nav-link" href="#profile">Profile</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- ========================
+    <!-- ========================
          Main layout
          ======================== -->
-  <main class="py-2 py-md-4">
-    <div class="container-xl">
-      <div class="row g-4">
-        <!-- ========================
+    <main class="py-2 py-md-4">
+      <div class="container-xl">
+        <div class="row g-4">
+          <!-- ========================
                Left column
                ======================== -->
-        <div class="col-lg-8">
-          <!-- Profile / Hero -->
-          <section id="profile" class="lp-card p-3 p-md-4 mb-3 lp-profile-card">
-            <!-- Profile banner -->
-            <div class="lp-profile-banner"></div>
+          <div class="col-lg-8">
+            <!-- Profile / Hero -->
+            <section
+              id="profile"
+              class="lp-card p-3 p-md-4 mb-3 lp-profile-card"
+            >
+              <!-- Profile banner -->
+              <div class="lp-profile-banner"></div>
 
-            <div class="d-flex flex-column flex-md-row align-items-md-center mt-1">
-              <!-- Avatar -->
-              <div class="me-md-4 d-flex justify-content-center lp-profile-avatar-wrap">
-                <div class="lp-avatar shadow-sm"></div>
-              </div>
+              <div
+                class="d-flex flex-column flex-md-row align-items-md-center mt-1"
+              >
+                <!-- Avatar -->
+                <div
+                  class="me-md-4 d-flex justify-content-center lp-profile-avatar-wrap"
+                >
+                  <div class="lp-avatar shadow-sm"></div>
+                </div>
 
-              <!-- Name + headline -->
-              <div class="flex-grow-1 mt-3 mt-md-0">
-                <h1 class="h4 mb-1">Kishan Patel</h1>
-                <p class="small mb-1 fw-medium">
-                  IT Support &amp; Cybersecurity · Windows 10/11 · M365 · AD ·
-                  Ticketing
-                </p>
-                <p class="small text-muted mb-2">
-                  Calgary, Alberta, Canada · Open to IT Support / Service Desk
-                  / Junior Sysadmin roles
-                </p>
+                <!-- Name + headline -->
+                <div class="flex-grow-1 mt-3 mt-md-0">
+                  <h1 class="h4 mb-1">Kishan Patel</h1>
+                  <p class="small mb-1 fw-medium">
+                    IT Support &amp; Cybersecurity · Windows 10/11 · M365 · AD ·
+                    Ticketing
+                  </p>
+                  <p class="small text-muted mb-2">
+                    Calgary, Alberta, Canada · Open to IT Support / Service Desk
+                    / Junior Sysadmin roles
+                  </p>
 
-                <!-- Quick links -->
-                <div class="d-flex flex-wrap align-items-center gap-3 mt-2">
-                  <a href="https://www.linkedin.com/in/kishnpatel" rel="_blank" class="lp-social-icon-link">
-                    <img src="assets/images/linkd.png" alt="LinkedIn" class="lp-social-icon" />
-                  </a>
+                  <!-- Quick links -->
+                  <div class="d-flex flex-wrap align-items-center gap-3 mt-2">
+                    <a
+                      href="https://www.linkedin.com/in/kishnpatel"
+                      rel="_blank"
+                      class="lp-social-icon-link"
+                    >
+                      <img
+                        src="assets/images/linkd.png"
+                        alt="LinkedIn"
+                        class="lp-social-icon"
+                      />
+                    </a>
 
-                  <a href="https://github.com/kishxnpatel" target="_blank" rel="noopener" class="lp-social-icon-link">
-                    <img src="assets/images/github.jpg" alt="GitHub" class="lp-social-icon" />
-                  </a>
-                  <a class="btn border" href="https://kishxnpatel.com/tickets" target="_blank" rel="noopener"> IT Ticket
-                    Library with KB </a>
-                  <a class="btn border" href="https://kishxnpatel.com/quickit" target="_blank" rel="noopener"> QuickIT
-                  </a>
-
+                    <a
+                      href="https://github.com/kishxnpatel"
+                      target="_blank"
+                      rel="noopener"
+                      class="lp-social-icon-link"
+                    >
+                      <img
+                        src="assets/images/github.jpg"
+                        alt="GitHub"
+                        class="lp-social-icon"
+                      />
+                    </a>
+                    <a
+                      class="btn border"
+                      href="https://kishxnpatel.com/tickets"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      IT Ticket Library with KB
+                    </a>
+                    <a
+                      class="btn border"
+                      href="https://kishxnpatel.com/quickit"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      QuickIT
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
 
-          <!-- About -->
-          <section class="lp-card p-3 p-md-4 mb-3">
-            <h2 class="lp-section-title mb-0">About</h2>
-            <p class="small mt-2 mb-0">
-              I focus on reliability, clear fixes, and tidy documentation.
-              Day-to-day that’s Windows 10/11, Microsoft 365, AD user/group
-              tasks, imaging (Intune/USB), and common desk-side issues (AV,
-              printers, onboarding, asset updates). I keep ticket hygiene
-              tight (ServiceNow/Jira), write simple KBs, and use light
-              scripting (PowerShell/Python) for inventory/log parsing. I’m
-              comfortable with basic Linux/CLI, networking checks
-              (port/VLAN/DHCP/DNS), and change/incident procedures.
-            </p>
-            <p class="small mt-3 mb-0">
-              My cybersecurity training means I default to least privilege,
-              patching, and safe configurations; my interest in DevOps has me
-              thinking in terms of automation, logs, and repeatable runbooks.
-              I’m Calgary-based, eligible to work anywhere in Canada, and
-              ready to add value on site or hybrid.
-            </p>
-          </section>
+            <!-- About -->
+            <section class="lp-card p-3 p-md-4 mb-3">
+              <h2 class="lp-section-title mb-0">About</h2>
+              <p class="small mt-2 mb-0">
+                I focus on reliability, clear fixes, and tidy documentation.
+                Day-to-day that’s Windows 10/11, Microsoft 365, AD user/group
+                tasks, imaging (Intune/USB), and common desk-side issues (AV,
+                printers, onboarding, asset updates). I keep ticket hygiene
+                tight (ServiceNow/Jira), write simple KBs, and use light
+                scripting (PowerShell/Python) for inventory/log parsing. I’m
+                comfortable with basic Linux/CLI, networking checks
+                (port/VLAN/DHCP/DNS), and change/incident procedures.
+              </p>
+              <p class="small mt-3 mb-0">
+                My cybersecurity training means I default to least privilege,
+                patching, and safe configurations; my interest in DevOps has me
+                thinking in terms of automation, logs, and repeatable runbooks.
+                I’m Calgary-based, eligible to work anywhere in Canada, and
+                ready to add value on site or hybrid.
+              </p>
+            </section>
 
-          <!-- Experience -->
-         <section class="lp-card p-3 p-md-4 mb-3">
-  <h2 class="lp-section-title mb-0">Experience</h2>
+            <!-- Experience -->
+            <section class="lp-card p-3 p-md-4 mb-3">
+              <h2 class="lp-section-title mb-0">Experience</h2>
 
-  <div class="mt-3">
-    <!-- Job 1 -->
-    <div class="mb-3">
-      <div class="d-flex flex-column flex-md-row justify-content-between">
-        <div class="d-flex align-items-start gap-2">
-          <!-- Company image (left) -->
-          <img
-            src="./assets/images/clic-logo.jpg"
-            alt="Calgary Drop-In &amp; Rehab Centre logo"
-            style="width:36px;height:36px;border-radius:10px;object-fit:cover;border:1px solid rgba(0,0,0,.15);"
-          />
+              <div class="mt-3">
+                <!-- Job 1 -->
+                <div class="mb-3">
+                  <div
+                    class="d-flex flex-column flex-md-row justify-content-between"
+                  >
+                    <div class="d-flex align-items-start gap-2">
+                      <!-- Company image (left) -->
+                      <img
+                        src="./assets/images/clic-logo.jpg"
+                        alt="Calgary Drop-In &amp; Rehab Centre logo"
+                        style="
+                          width: 36px;
+                          height: 36px;
+                          border-radius: 10px;
+                          object-fit: cover;
+                          border: 1px solid rgba(0, 0, 0, 0.15);
+                        "
+                      />
 
-          <div>
-            <p class="small fw-semibold mb-0">IT Technician (Volunteer)</p>
-            <p class="small text-muted mb-0">
-              Calgary Drop-In &amp; Rehab Centre · Calgary, AB
-            </p>
-          </div>
-        </div>
-
-        <p class="small text-muted mb-0 mt-1 mt-md-0">
-          Nov 2025 – Present
-        </p>
-      </div>
-
-      <ul class="small mt-2 lp-list-bullets ps-3">
-        <li>
-          Sanitized drives on donated PCs per standard; logged wipe ID/serial/pass-fail and prepped systems for redeployment.
-        </li>
-        <li>
-          Deployed Windows (standard image), created/activated local/admin account, and applied Windows Update and vendor drivers.
-        </li>
-        <li>
-          Updated BIOS/firmware; enforced UEFI/TPM/Secure Boot, set boot order, and validated hardware health (SMART, memory, thermals).
-        </li>
-        <li>
-          Ran functional QA (NIC link, display, USB, HID); documented faults and routed to repair; completed asset intake/inventory (serial/spec/BIOS/OS build) and labeled/packaged for distribution.
-        </li>
-      </ul>
-    </div>
-
-    <!-- Job 2 -->
-    <div class="mb-3">
-      <div class="d-flex flex-column flex-md-row justify-content-between">
-        <div class="d-flex align-items-start gap-2">
-          <!-- Company image (left) -->
-          <img
-            src="./assets/images/BS-logo.png"
-            alt="Bombay Spices Grocery Store logo"
-            style="width:36px;height:36px;border-radius:10px;object-fit:cover;border:1px solid rgba(0,0,0,.15);"
-          />
-
-          <div>
-            <p class="small fw-semibold mb-0">Tech Specialist &amp; Customer Service</p>
-            <p class="small text-muted mb-0">
-              Bombay Spices Grocery Store · Calgary, AB
-            </p>
-          </div>
-        </div>
-
-        <p class="small text-muted mb-0 mt-1 mt-md-0">
-          August 2024 – September 2025
-        </p>
-      </div>
-
-      <ul class="small mt-2 lp-list-bullets ps-3">
-        <li>
-          Operate and troubleshoot POS systems, Windows 10/11 devices, and M365 applications. Manage customer profiles in the Bombay Points app, including point transfers and account updates.
-        </li>
-        <li>
-          Process refunds and special orders through internal systems, ensuring accuracy and compliance. Support inventory control, stock ordering, and weekend deliveries. Resolve customer inquiries in-store and by phone.
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-          <!-- Projects -->
-
-
-          <section id="projects" class="lp-card p-3 p-md-4 mb-3">
-            <h2 class="lp-section-title mb-0">Projects</h2>
-
-            <div class="mt-3">
-              <!-- Two-column layout -->
-              <div class="row g-2">
-                <!-- Project 1 -->
-                <div class="col-12 col-lg-6">
-                  <article class="border rounded-3 p-3 bg-light h-100">
-                    <p class="small fw-semibold mb-0">OsTicket-Helpdesk-System</p>
-                    <p class="small text-muted mb-1">Personal Lab · IT Support</p>
-                    <div class="d-flex gap-2 flex-wrap">
-
-                      <a class="btn btn-primary btn-sm" href="https://github.com/kishxnpatel/OsTicket-Helpdesk-System"
-                        target="_blank" rel="noopener">
-                        View Repo
-                      </a>
-                    </div>
-                    <p class="small mb-1">
-                      Configured a fully functional IT helpdesk simulation using osTicket in a virtualized lab
-                      environment.
-                      Built and managed the environment to replicate real-world IT support workflows, showcasing
-                      networking,
-                      Linux administration, and ticketing system management.
-                    </p>
-                    <div>
-                      <span class="lp-chip">Windows 11</span>
-                      <span class="lp-chip">Active Directory</span>
-                      <span class="lp-chip">Ticketing</span>
-                    </div>
-                  </article>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="col-12 col-lg-6">
-                  <article class="border rounded-3 p-3 bg-light h-100">
-                    <p class="small fw-semibold mb-0">Blue Team Mimikatz Detection</p>
-                    <p class="small text-muted mb-1">Security Lab · Blue Team</p>
-                    <div class="d-flex gap-2 flex-wrap">
-
-                      <a class="btn btn-primary btn-sm"
-                        href="https://github.com/kishxnpatel/Blue-Team-Mimikatz-Detection" target="_blank"
-                        rel="noopener">
-                        View Repo
-                      </a>
-                    </div>
-                    <p class="small mb-1">
-                      Built a lab to simulate detection of credential dumping using Sysmon and Splunk.
-                      Executed a controlled Mimikatz scenario in a Windows 10 VM and created a Splunk alert to detect
-                      it.
-                    </p>
-                    <div>
-                      <span class="lp-chip">Windows Logs</span>
-                      <span class="lp-chip">Sysmon</span>
-                      <span class="lp-chip">Splunk</span>
-                    </div>
-                  </article>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="col-12 col-lg-6">
-                  <article class="border rounded-3 p-3 bg-light h-100">
-                    <div class="d-flex align-items-start justify-content-between gap-2 flex-wrap">
                       <div>
-                        <p class="small fw-semibold mb-0">QuickIT (Quick Toolkit) · Chrome Extension</p>
-                        <p class="small text-muted mb-1">Chrome Web Store · IT Support + Developer Tools</p>
-                      </div>
-
-                      <div class="d-flex gap-2 flex-wrap">
-                        <a class="btn btn-primary btn-sm"
-                          href="https://chromewebstore.google.com/detail/quick-toolkit/mbomcenagbpmcbihcllbencpjmjcjpkb?authuser=0&hl=en"
-                          target="_blank" rel="noopener">
-                          View on Chrome Web Store
-                        </a>
-                        <a class="btn btn-primary btn-sm" href="https://kishxnpatel.com/quickit/" target="_blank"
-                          rel="noopener">
-                          QuickIT Website
-                        </a>
+                        <p class="small fw-semibold mb-0">
+                          IT Technician (Volunteer)
+                        </p>
+                        <p class="small text-muted mb-0">
+                          Calgary Drop-In &amp; Rehab Centre · Calgary, AB
+                        </p>
                       </div>
                     </div>
 
-                    <p class="small mb-1">
-                      Built and shipped a lightweight Chrome extension used by real users. Provides one-click developer
-                      references
-                      and an IT support ticket note builder with generate + copy workflow. Uses Manifest V3, local-only
-                      storage,
-                      and clipboard copy on user action.
+                    <p class="small text-muted mb-0 mt-1 mt-md-0">
+                      Nov 2025 – Present
                     </p>
+                  </div>
 
-                    <div>
-                      <span class="lp-chip">Chrome Extension (MV3)</span>
-                      <span class="lp-chip">HTML/CSS</span>
-                      <span class="lp-chip">JavaScript</span>
-                      <span class="lp-chip">Chrome Storage</span>
-                      <span class="lp-chip">Clipboard</span>
-                    </div>
-                  </article>
+                  <ul class="small mt-2 lp-list-bullets ps-3">
+                    <li>
+                      Sanitized drives on donated PCs per standard; logged wipe
+                      ID/serial/pass-fail and prepped systems for redeployment.
+                    </li>
+                    <li>
+                      Deployed Windows (standard image), created/activated
+                      local/admin account, and applied Windows Update and vendor
+                      drivers.
+                    </li>
+                    <li>
+                      Updated BIOS/firmware; enforced UEFI/TPM/Secure Boot, set
+                      boot order, and validated hardware health (SMART, memory,
+                      thermals).
+                    </li>
+                    <li>
+                      Ran functional QA (NIC link, display, USB, HID);
+                      documented faults and routed to repair; completed asset
+                      intake/inventory (serial/spec/BIOS/OS build) and
+                      labeled/packaged for distribution.
+                    </li>
+                  </ul>
                 </div>
 
-                <!-- Project 4 (Tickets Library) -->
-                <div class="col-12 col-lg-6">
-                  <article class="border  rounded-3 p-3 bg-light h-100 ">
-                    <div class="d-flex align-items-start justify-content-between gap-2 flex-wrap">
-                      <div>
-                        <p class="small fw-semibold mb-0">IT Support Ticket Library</p>
-                        <p class="small text-muted mb-1">Documentation Project · Service Desk Workflows</p>
-                      </div>
+                <!-- Job 2 -->
+                <div class="mb-3">
+                  <div
+                    class="d-flex flex-column flex-md-row justify-content-between"
+                  >
+                    <div class="d-flex align-items-start gap-2">
+                      <!-- Company image (left) -->
+                      <img
+                        src="./assets/images/BS-logo.png"
+                        alt="Bombay Spices Grocery Store logo"
+                        style="
+                          width: 36px;
+                          height: 36px;
+                          border-radius: 10px;
+                          object-fit: cover;
+                          border: 1px solid rgba(0, 0, 0, 0.15);
+                        "
+                      />
 
+                      <div>
+                        <p class="small fw-semibold mb-0">
+                          Tech Specialist &amp; Customer Service
+                        </p>
+                        <p class="small text-muted mb-0">
+                          Bombay Spices Grocery Store · Calgary, AB
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="small text-muted mb-0 mt-1 mt-md-0">
+                      August 2024 – September 2025
+                    </p>
+                  </div>
+
+                  <ul class="small mt-2 lp-list-bullets ps-3">
+                    <li>
+                      Operate and troubleshoot POS systems, Windows 10/11
+                      devices, and M365 applications. Manage customer profiles
+                      in the Bombay Points app, including point transfers and
+                      account updates.
+                    </li>
+                    <li>
+                      Process refunds and special orders through internal
+                      systems, ensuring accuracy and compliance. Support
+                      inventory control, stock ordering, and weekend deliveries.
+                      Resolve customer inquiries in-store and by phone.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <!-- Projects -->
+
+            <section id="projects" class="lp-card p-3 p-md-4 mb-3">
+              <h2 class="lp-section-title mb-0">Projects</h2>
+
+              <div class="mt-3">
+                <!-- Two-column layout -->
+                <div class="row g-2">
+                  <!-- Project 1 -->
+                  <div class="col-12 col-lg-6">
+                    <article class="border rounded-3 p-3 bg-light h-100">
+                      <p class="small fw-semibold mb-0">
+                        OsTicket-Helpdesk-System
+                      </p>
+                      <p class="small text-muted mb-1">
+                        Personal Lab · IT Support
+                      </p>
                       <div class="d-flex gap-2 flex-wrap">
-                        <a class="btn btn-primary btn-sm" href="https://kishxnpatel.com/tickets/" target="_blank"
-                          rel="noopener">
-                          View Ticket Library
-                        </a>
-                        <a class="btn btn-primary btn-sm"
-                          href="https://github.com/kishxnpatel/it-support-ticket-library" target="_blank"
-                          rel="noopener">
+                        <a
+                          class="btn btn-primary btn-sm"
+                          href="https://github.com/kishxnpatel/OsTicket-Helpdesk-System"
+                          target="_blank"
+                          rel="noopener"
+                        >
                           View Repo
                         </a>
                       </div>
-                    </div>
+                      <p class="small mb-1">
+                        Configured a fully functional IT helpdesk simulation
+                        using osTicket in a virtualized lab environment. Built
+                        and managed the environment to replicate real-world IT
+                        support workflows, showcasing networking, Linux
+                        administration, and ticketing system management.
+                      </p>
+                      <div>
+                        <span class="lp-chip">Windows 11</span>
+                        <span class="lp-chip">Active Directory</span>
+                        <span class="lp-chip">Ticketing</span>
+                      </div>
+                    </article>
+                  </div>
 
-                    <p class="small mb-1">
-                      Created real-world style ticket write ups with clear structure: symptoms, environment, triage,
-                      diagnostics
-                      commands, root cause, resolution, and validation. Includes matching KB articles to standardize
-                      fixes.
+                  <!-- Project 2 -->
+                  <div class="col-12 col-lg-6">
+                    <article class="border rounded-3 p-3 bg-light h-100">
+                      <p class="small fw-semibold mb-0">
+                        Blue Team Mimikatz Detection
+                      </p>
+                      <p class="small text-muted mb-1">
+                        Security Lab · Blue Team
+                      </p>
+                      <div class="d-flex gap-2 flex-wrap">
+                        <a
+                          class="btn btn-primary btn-sm"
+                          href="https://github.com/kishxnpatel/Blue-Team-Mimikatz-Detection"
+                          target="_blank"
+                          rel="noopener"
+                        >
+                          View Repo
+                        </a>
+                      </div>
+                      <p class="small mb-1">
+                        Built a lab to simulate detection of credential dumping
+                        using Sysmon and Splunk. Executed a controlled Mimikatz
+                        scenario in a Windows 10 VM and created a Splunk alert
+                        to detect it.
+                      </p>
+                      <div>
+                        <span class="lp-chip">Windows Logs</span>
+                        <span class="lp-chip">Sysmon</span>
+                        <span class="lp-chip">Splunk</span>
+                      </div>
+                    </article>
+                  </div>
+
+                  <!-- Project 3 -->
+                  <div class="col-12 col-lg-6">
+                    <article class="border rounded-3 p-3 bg-light h-100">
+                      <div
+                        class="d-flex align-items-start justify-content-between gap-2 flex-wrap"
+                      >
+                        <div>
+                          <p class="small fw-semibold mb-0">
+                            QuickIT (Quick Toolkit) · Chrome Extension
+                          </p>
+                          <p class="small text-muted mb-1">
+                            Chrome Web Store · IT Support + Developer Tools
+                          </p>
+                        </div>
+
+                        <div class="d-flex gap-2 flex-wrap">
+                          <a
+                            class="btn btn-primary btn-sm"
+                            href="https://chromewebstore.google.com/detail/quick-toolkit/mbomcenagbpmcbihcllbencpjmjcjpkb?authuser=0&hl=en"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            View on Chrome Web Store
+                          </a>
+                          <a
+                            class="btn btn-primary btn-sm"
+                            href="https://kishxnpatel.com/quickit/"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            QuickIT Website
+                          </a>
+                        </div>
+                      </div>
+
+                      <p class="small mb-1">
+                        Built and shipped a lightweight Chrome extension used by
+                        real users. Provides one-click developer references and
+                        an IT support ticket note builder with generate + copy
+                        workflow. Uses Manifest V3, local-only storage, and
+                        clipboard copy on user action.
+                      </p>
+
+                      <div>
+                        <span class="lp-chip">Chrome Extension (MV3)</span>
+                        <span class="lp-chip">HTML/CSS</span>
+                        <span class="lp-chip">JavaScript</span>
+                        <span class="lp-chip">Chrome Storage</span>
+                        <span class="lp-chip">Clipboard</span>
+                      </div>
+                    </article>
+                  </div>
+
+                  <!-- Project 4 (Tickets Library) -->
+                  <div class="col-12 col-lg-6">
+                    <article class="border rounded-3 p-3 bg-light h-100">
+                      <div
+                        class="d-flex align-items-start justify-content-between gap-2 flex-wrap"
+                      >
+                        <div>
+                          <p class="small fw-semibold mb-0">
+                            IT Support Ticket Library
+                          </p>
+                          <p class="small text-muted mb-1">
+                            Documentation Project · Service Desk Workflows
+                          </p>
+                        </div>
+
+                        <div class="d-flex gap-2 flex-wrap">
+                          <a
+                            class="btn btn-primary btn-sm"
+                            href="https://kishxnpatel.com/tickets/"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            View Ticket Library
+                          </a>
+                          <a
+                            class="btn btn-primary btn-sm"
+                            href="https://github.com/kishxnpatel/it-support-ticket-library"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            View Repo
+                          </a>
+                        </div>
+                      </div>
+
+                      <p class="small mb-1">
+                        Created real-world style ticket write ups with clear
+                        structure: symptoms, environment, triage, diagnostics
+                        commands, root cause, resolution, and validation.
+                        Includes matching KB articles to standardize fixes.
+                      </p>
+
+                      <div>
+                        <span class="lp-chip">Windows 10/11</span>
+                        <span class="lp-chip">Microsoft 365</span>
+                        <span class="lp-chip">Active Directory</span>
+                        <span class="lp-chip">PowerShell</span>
+                        <span class="lp-chip">Networking</span>
+                        <span class="lp-chip">KB Writing</span>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Education -->
+            <section id="education" class="lp-card p-3 p-md-4 mb-3">
+              <h2 class="lp-section-title mb-0">Education</h2>
+
+              <div class="mt-3">
+                <!-- SAIT #1 -->
+                <div class="mb-3 d-flex align-items-start">
+                  <img
+                    src="assets/images/sait.jpg"
+                    alt="SAIT logo"
+                    class="lp-edu-logo me-2"
+                  />
+                  <div>
+                    <p class="small fw-semibold mb-0">
+                      Southern Alberta Institute of Technology (SAIT)
                     </p>
+                    <p class="small mb-0">
+                      Diploma in Management and Leadership · GPA 3.65 / 4.0
+                    </p>
+                    <p class="small text-muted mb-0">Jan 2025 – Aug 2025</p>
+                  </div>
+                </div>
 
-                    <div>
-                      <span class="lp-chip">Windows 10/11</span>
-                      <span class="lp-chip">Microsoft 365</span>
-                      <span class="lp-chip">Active Directory</span>
-                      <span class="lp-chip">PowerShell</span>
-                      <span class="lp-chip">Networking</span>
-                      <span class="lp-chip">KB Writing</span>
-                    </div>
-                  </article>
+                <!-- SAIT #2 -->
+                <div class="mb-3 d-flex align-items-start">
+                  <img
+                    src="assets/images/sait.jpg"
+                    alt="SAIT logo"
+                    class="lp-edu-logo me-2"
+                  />
+                  <div>
+                    <p class="small fw-semibold mb-0">
+                      Southern Alberta Institute of Technology (SAIT)
+                    </p>
+                    <p class="small mb-0">
+                      Post-Diploma in Cybersecurity for Control Systems · GPA
+                      3.95 / 4.0
+                    </p>
+                    <p class="small text-muted mb-0">Jan 2024 – Aug 2024</p>
+                  </div>
+                </div>
+
+                <!-- SPU -->
+                <div class="mb-2 d-flex align-items-start">
+                  <img
+                    src="assets/images/spu.png"
+                    alt="Sardar Patel University logo"
+                    class="lp-edu-logo me-2"
+                  />
+                  <div>
+                    <p class="small fw-semibold mb-0">
+                      Sardar Patel University
+                    </p>
+                    <p class="small mb-0">
+                      Bachelor of Computer Applications · GPA 8 / 10
+                    </p>
+                    <p class="small text-muted mb-0">May 2020 – May 2023</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
 
-          <!-- Education -->
-          <section id="education" class="lp-card p-3 p-md-4 mb-3">
-            <h2 class="lp-section-title mb-0">Education</h2>
-
-            <div class="mt-3">
-              <!-- SAIT #1 -->
-              <div class="mb-3 d-flex align-items-start">
-                <img src="assets/images/sait.jpg" alt="SAIT logo" class="lp-edu-logo me-2" />
-                <div>
-                  <p class="small fw-semibold mb-0">
-                    Southern Alberta Institute of Technology (SAIT)
-                  </p>
-                  <p class="small mb-0">
-                    Diploma in Management and Leadership · GPA 3.65 / 4.0
-                  </p>
-                  <p class="small text-muted mb-0">Jan 2025 – Aug 2025</p>
-                </div>
-              </div>
-
-              <!-- SAIT #2 -->
-              <div class="mb-3 d-flex align-items-start">
-                <img src="assets/images/sait.jpg" alt="SAIT logo" class="lp-edu-logo me-2" />
-                <div>
-                  <p class="small fw-semibold mb-0">
-                    Southern Alberta Institute of Technology (SAIT)
-                  </p>
-                  <p class="small mb-0">
-                    Post-Diploma in Cybersecurity for Control Systems · GPA
-                    3.95 / 4.0
-                  </p>
-                  <p class="small text-muted mb-0">Jan 2024 – Aug 2024</p>
-                </div>
-              </div>
-
-              <!-- SPU -->
-              <div class="mb-2 d-flex align-items-start">
-                <img src="assets/images/spu.png" alt="Sardar Patel University logo" class="lp-edu-logo me-2" />
-                <div>
-                  <p class="small fw-semibold mb-0">
-                    Sardar Patel University
-                  </p>
-                  <p class="small mb-0">
-                    Bachelor of Computer Applications · GPA 8 / 10
-                  </p>
-                  <p class="small text-muted mb-0">May 2020 – May 2023</p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-
-        <!-- ========================
+          <!-- ========================
                Right column
                ======================== -->
-        <div class="col-lg-4">
-          <!-- Skills -->
-          <section class="lp-card p-3 p-md-4 mb-3">
-            <h2 class="lp-section-title mb-2">Skills &amp; Tech Stack</h2>
+          <div class="col-lg-4">
+            <!-- Skills -->
+            <section class="lp-card p-3 p-md-4 mb-3">
+              <h2 class="lp-section-title mb-2">Skills &amp; Tech Stack</h2>
 
-            <ul class="small lp-list-bullets ps-3 mb-0">
-              <li class="mb-2">
-                <strong>Windows 10/11 endpoint support:</strong>
-                <div class="d-flex flex-wrap gap-1 mt-1">
-                  <span class="lp-chip">Imaging/Deployment</span>
-                  <span class="lp-chip">Drivers</span>
-                  <span class="lp-chip">BIOS/Firmware</span>
-                  <span class="lp-chip">Remote Desktop</span>
-                  <span class="lp-chip">Printers/Scanners</span>
-                  <span class="lp-chip">Wi-Fi</span>
-                  <span class="lp-chip">Meeting-room AV</span>
-                </div>
-              </li>
+              <ul class="small lp-list-bullets ps-3 mb-0">
+                <li class="mb-2">
+                  <strong>Windows 10/11 endpoint support:</strong>
+                  <div class="d-flex flex-wrap gap-1 mt-1">
+                    <span class="lp-chip">Imaging/Deployment</span>
+                    <span class="lp-chip">Drivers</span>
+                    <span class="lp-chip">BIOS/Firmware</span>
+                    <span class="lp-chip">Remote Desktop</span>
+                    <span class="lp-chip">Printers/Scanners</span>
+                    <span class="lp-chip">Wi-Fi</span>
+                    <span class="lp-chip">Meeting-room AV</span>
+                  </div>
+                </li>
 
-              <li class="mb-2">
-                <strong>Microsoft 365 + Identity:</strong>
-                <div class="d-flex flex-wrap gap-1 mt-1">
-                  <span class="lp-chip">Outlook</span>
-                  <span class="lp-chip">Teams</span>
-                  <span class="lp-chip">OneDrive</span>
-                  <span class="lp-chip">SharePoint</span>
-                  <span class="lp-chip">Active Directory (Users/Groups)</span>
-                  <span class="lp-chip">Password Resets</span>
-                  <span class="lp-chip">Domain/Workstation Joins</span>
-                  <span class="lp-chip">Entra ID (Fundamentals)</span>
-                </div>
-              </li>
+                <li class="mb-2">
+                  <strong>Microsoft 365 + Identity:</strong>
+                  <div class="d-flex flex-wrap gap-1 mt-1">
+                    <span class="lp-chip">Outlook</span>
+                    <span class="lp-chip">Teams</span>
+                    <span class="lp-chip">OneDrive</span>
+                    <span class="lp-chip">SharePoint</span>
+                    <span class="lp-chip">Active Directory (Users/Groups)</span>
+                    <span class="lp-chip">Password Resets</span>
+                    <span class="lp-chip">Domain/Workstation Joins</span>
+                    <span class="lp-chip">Entra ID (Fundamentals)</span>
+                  </div>
+                </li>
 
-              <li class="mb-0">
-                <strong>IT support operations:</strong>
-                <div class="d-flex flex-wrap gap-1 mt-1">
-                  <span class="lp-chip">ServiceNow</span>
-                  <span class="lp-chip">Jira</span>
-                  <span class="lp-chip">Ticketing (Log/Triage/Escalate)</span>
-                  <span class="lp-chip">SOP/KB Documentation</span>
-                  <span class="lp-chip">DNS</span>
-                  <span class="lp-chip">DHCP</span>
-                  <span class="lp-chip">VLAN</span>
-                  <span class="lp-chip">Port Checks</span>
-                  <span class="lp-chip">PowerShell</span>
-                  <span class="lp-chip">Python (Basic)</span>
-                  <span class="lp-chip">Wireshark</span>
-                  <span class="lp-chip">Nmap</span>
-                </div>
-              </li>
-            </ul>
-          </section>
+                <li class="mb-0">
+                  <strong>IT support operations:</strong>
+                  <div class="d-flex flex-wrap gap-1 mt-1">
+                    <span class="lp-chip">ServiceNow</span>
+                    <span class="lp-chip">Jira</span>
+                    <span class="lp-chip">Ticketing (Log/Triage/Escalate)</span>
+                    <span class="lp-chip">SOP/KB Documentation</span>
+                    <span class="lp-chip">DNS</span>
+                    <span class="lp-chip">DHCP</span>
+                    <span class="lp-chip">VLAN</span>
+                    <span class="lp-chip">Port Checks</span>
+                    <span class="lp-chip">PowerShell</span>
+                    <span class="lp-chip">Python (Basic)</span>
+                    <span class="lp-chip">Wireshark</span>
+                    <span class="lp-chip">Nmap</span>
+                  </div>
+                </li>
+              </ul>
+            </section>
 
-          <!-- Tools / Security -->
-          <section class="lp-card lp-card-tools p-3 p-md-4 mb-3">
-            <h2 class="lp-section-title mb-2">Tools &amp; Security</h2>
+            <!-- Tools / Security -->
+            <section class="lp-card lp-card-tools p-3 p-md-4 mb-3">
+              <h2 class="lp-section-title mb-2">Tools &amp; Security</h2>
 
-            <ul class="small lp-list-bullets ps-3 mb-0">
-              <li class="mb-2">
-                <strong>Tools:</strong>
-                <div class="d-flex flex-wrap gap-1 mt-1">
-                  <span class="lp-chip">Wireshark</span>
-                  <span class="lp-chip">Nmap</span>
-                </div>
-              </li>
+              <ul class="small lp-list-bullets ps-3 mb-0">
+                <li class="mb-2">
+                  <strong>Tools:</strong>
+                  <div class="d-flex flex-wrap gap-1 mt-1">
+                    <span class="lp-chip">Wireshark</span>
+                    <span class="lp-chip">Nmap</span>
+                  </div>
+                </li>
 
-              <li class="mb-2">
-                <strong>Endpoint security support:</strong>
-                <div class="d-flex flex-wrap gap-1 mt-1">
-                  <span class="lp-chip">Windows Updates</span>
-                  <span class="lp-chip">AV/Defender Checks</span>
-                  <span class="lp-chip">Firewall Enabled</span>
-                  <span class="lp-chip">Secure Boot/TPM Checks</span>
-                </div>
-              </li>
+                <li class="mb-2">
+                  <strong>Endpoint security support:</strong>
+                  <div class="d-flex flex-wrap gap-1 mt-1">
+                    <span class="lp-chip">Windows Updates</span>
+                    <span class="lp-chip">AV/Defender Checks</span>
+                    <span class="lp-chip">Firewall Enabled</span>
+                    <span class="lp-chip">Secure Boot/TPM Checks</span>
+                  </div>
+                </li>
 
-              <li class="mb-0">
-                <strong>Documentation:</strong>
-                <div class="d-flex flex-wrap gap-1 mt-1">
-                  <span class="lp-chip">Knowledge Base (KB)</span>
-                  <span class="lp-chip">SOP Writing</span>
-                </div>
-              </li>
-            </ul>
-          </section>
+                <li class="mb-0">
+                  <strong>Documentation:</strong>
+                  <div class="d-flex flex-wrap gap-1 mt-1">
+                    <span class="lp-chip">Knowledge Base (KB)</span>
+                    <span class="lp-chip">SOP Writing</span>
+                  </div>
+                </li>
+              </ul>
+            </section>
 
+            <!-- Contact -->
+            <section id="contact" class="lp-card p-3 p-md-4 mb-3">
+              <h2 class="lp-section-title mb-2">Contact</h2>
 
+              <div class="small mb-2">
+                <p class="mb-1 fw-semibold">Email</p>
+                <a
+                  href="mailto:Kishnptll@gmail.com"
+                  class="text-decoration-none"
+                  >Kishnptll@gmail.com</a
+                >
+              </div>
 
-          <!-- Contact -->
-          <section id="contact" class="lp-card p-3 p-md-4 mb-3">
-            <h2 class="lp-section-title mb-2">Contact</h2>
+              <div class="small mb-2">
+                <p class="mb-1 fw-semibold">LinkedIn</p>
+                <a
+                  href="https://www.linkedin.com/in/kishnpatel"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-decoration-none"
+                  >linkedin.com/in/kishnpatel</a
+                >
+              </div>
 
-            <div class="small mb-2">
-              <p class="mb-1 fw-semibold">Email</p>
-              <a href="mailto:Kishnptll@gmail.com" class="text-decoration-none">Kishnptll@gmail.com</a>
-            </div>
-
-            <div class="small mb-2">
-              <p class="mb-1 fw-semibold">LinkedIn</p>
-              <a href="https://www.linkedin.com/in/kishnpatel" target="_blank" rel="noopener"
-                class="text-decoration-none">linkedin.com/in/kishnpatel</a>
-            </div>
-
-            <div class="small mb-0">
-              <p class="mb-1 fw-semibold">Website</p>
-              <a href="https://kishxnpatel.com" target="_blank" rel="noopener"
-                class="text-decoration-none">kishxnpatel.com</a>
-            </div>
-          </section>
+              <div class="small mb-0">
+                <p class="mb-1 fw-semibold">Website</p>
+                <a
+                  href="https://kishxnpatel.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-decoration-none"
+                  >kishxnpatel.com</a
+                >
+              </div>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <!-- ========================
+    <!-- ========================
          Scripts
          ======================== -->
-  <!-- Bootstap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <!-- Bootstap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Smooth scroll JS (for fixed navbar offset) -->
-  <script>
-    document
-      .querySelectorAll('.nav-link[href^="#"]')
-      .forEach(function (link) {
-        link.addEventListener("click", function (e) {
-          e.preventDefault();
+    <!-- Smooth scroll JS (for fixed navbar offset) -->
+    <script>
+      document
+        .querySelectorAll('.nav-link[href^="#"]')
+        .forEach(function (link) {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
 
-          const targetId = this.getAttribute("href").substring(1);
-          const targetEl = document.getElementById(targetId);
-          if (!targetEl) return;
+            const targetId = this.getAttribute("href").substring(1);
+            const targetEl = document.getElementById(targetId);
+            if (!targetEl) return;
 
-          const offset = 70; // adjust if navbar height changes
+            const offset = 70; // adjust if navbar height changes
 
-          const y =
-            targetEl.getBoundingClientRect().top +
-            window.pageYOffset -
-            offset;
+            const y =
+              targetEl.getBoundingClientRect().top +
+              window.pageYOffset -
+              offset;
 
-          window.scrollTo({
-            top: y,
-            behavior: "smooth",
+            window.scrollTo({
+              top: y,
+              behavior: "smooth",
+            });
           });
         });
-      });
-  </script>
-</body>
-
-
+    </script>
+  </body>
 </html>
